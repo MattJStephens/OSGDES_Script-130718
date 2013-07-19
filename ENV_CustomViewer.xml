@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--mjs OpenSceneGraph Extensible Markup Language Process Description Script (OSG XML PDS)-->
+
+<Environment>
+  <ActiveViewerIndex>0</ActiveViewerIndex>
+  <CustomCamera>
+    <VelocityCoefficient>200</VelocityCoefficient>
+    <MouseCoefficient>0.001</MouseCoefficient>
+    <UpAxis>X</UpAxis>
+    <Position>
+      <x>0</x>
+      <y>0</y>
+      <z>-500</z>
+    </Position>
+  </CustomCamera>
+  <KeyBoardEventHandler>enable</KeyBoardEventHandler>
+  <Viewer>
+    <Name>Viewer1</Name>
+    <Ref>
+      <RefName>KeyBoardEventHandler</RefName>
+      <EntityType>KeyBoardEventHandler</EntityType>
+      <RefType>AddEventHandler</RefType>
+    </Ref>
+    <SetUpViewInWindow>
+      <x>50</x>
+      <y>50</y>
+      <width>1024</width>
+      <height>768</height>
+    </SetUpViewInWindow>
+  </Viewer>
+</Environment>
+
+

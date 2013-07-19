@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- Created with XMLFox -->
+<Billboard>
+  <Name>$Billboard</Name>
+  <Mode>AXIAL_ROT</Mode>
+  <Position>
+    <x>0</x>
+    <y>0</y>
+    <z>0</z>
+  </Position>
+  <Axis>
+    <x>0</x>
+    <y>0</y>
+    <z>1</z>
+  </Axis>
+  <Normal>
+    <x>0</x>
+    <y>-1</y>
+    <z>0</z>
+  </Normal>
+  <Ref>
+    <RefName>$Geometry</RefName>
+    <EntityType>Geometry</EntityType>
+    <RefType>AddDrawable</RefType>
+  </Ref>
+  <Ref>
+    <RefName>$Node</RefName>
+    <EntityType>Node</EntityType>
+    <RefType>SetZIntersect</RefType>
+  </Ref>
+</Billboard>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+
+
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    Image-->
+  <Image>
+    <Name>ScreenGrab</Name>
+  </Image>
+
+
+</Environment>

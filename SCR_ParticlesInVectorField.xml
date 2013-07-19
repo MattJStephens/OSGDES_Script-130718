@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Script> 
+  <EnvironmentFileName>ENV_ParticlesInVectorField.xml</EnvironmentFileName>
+  <EventFileName>Event_ParticlesInVectorField.xml</EventFileName> 
+</Script>

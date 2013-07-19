@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Event>
+  <Type>UpdatePositionParametricExpression</Type>
+  <TimeType>Real</TimeType>
+  <RefName>Sphere5PAT</RefName>
+  <Expression>10 * sin (  t + 3.14159 ) </Expression>
+  <Expression>10 * cos ( t + 3.14159 ) </Expression>
+  <Expression>1 * cos ( 10 * t ) </Expression>
+</Event>

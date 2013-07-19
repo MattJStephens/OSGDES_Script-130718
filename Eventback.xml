@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Process Description Script (OSG XML PDS)-->
+<!--✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠-->
+<Event>
+  <Name>Sequencer1</Name>
+  <Type>Sequencer</Type>
+  <Subordination>Simultaneous</Subordination>
+  <Event>
+    <Name>SaveEventTree</Name>
+    <FileName>EventTree1.xml</FileName>
+    <Type>SaveEventTree</Type>
+    <Recurrance>Singular</Recurrance>
+  </Event>
+  <!--★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ AlterText -->
+  <Event>
+    <Name>AlterText1</Name>
+    <Type>AlterText</Type>
+    <AlterString>ElapsedTime</AlterString>
+    <RefName>T1</RefName>
+  </Event>
+  <Event>
+    <Name>AlterText2</Name>
+    <Type>AlterText</Type>
+    <AlterString>ElapsedSimulationTime</AlterString>
+    <RefName>T2</RefName>
+  </Event>
+  <!--<Event>
+   <Name>UpdatePositionParametricExpression1</Name>
+    <Type>UpdatePositionParametricExpression</Type>
+    <TimeType>Real</TimeType>
+    <RefName>Sphere4PAT</RefName>
+    <Expression>10 * sin (  t  ) </Expression>
+    <Expression>10 * cos ( t ) </Expression>
+    <Expression>5 * sin ( 5 * t ) </Expression>
+  </Event>-->
+  <!--<Event>
+    <Type>UpdatePositionParametricExpression</Type>
+    <TimeType>Real</TimeType>
+    <RefName>Sphere5PAT</RefName>
+    <Expression>10 * sin (  t + 3.14159 ) </Expression>
+    <Expression>10 * cos ( t + 3.14159 ) </Expression>
+    <Expression>1 * cos ( 10 * t ) </Expression>
+  </Event>-->
+  <Event>
+    <Name>Sequencer2</Name>
+    <Type>Sequencer</Type>
+    <Subordination>PeriodicSimultaneous</Subordination>
+    <Period>1</Period>    
+    <Event>
+      <Name>UpdateSimulationTime1</Name>
+      <Type>UpdateSimulationTime</Type>
+      <SimulationTimeIncrement>10</SimulationTimeIncrement>
+    </Event>    
+    <Event>
+      <Name>UpdateVelocity1</Name>
+      <Type>UpdateVelocity</Type>
+      <TimeType>Simulation</TimeType>
+      <Velocity>
+        <x>0</x>
+        <y>0.1</y>
+        <z>0</z>
+      </Velocity>
+      <RefName>Sphere2PAT</RefName>
+      
+      <!--<ClimaxCondition>y > 50</ClimaxCondition>
+      <ClimaxVariable>y</ClimaxVariable>
+      <Recurrance>Singular</Recurrance>-->
+      
+      <VariableAssociation>y=Ry</VariableAssociation>
+      <SelfDestruct>Climax</SelfDestruct>
+      <Response_xml>MoveSpherePosX.xml</Response_xml>
+      <Response_xml>SaveEventTree2.xml</Response_xml>
+    </Event>
+    <!--<Event>
+      <Name>Sequencer3</Name>
+      <Type>Sequencer</Type>      
+      <Subordination>Sequential</Subordination>          
+      <Event>
+        <Type>AlterPosition</Type>
+        <RefName>Sphere1PAT</RefName>
+        <Position>
+          <x>0</x>
+          <y>0</y>
+          <z>10</z>
+        </Position>
+      </Event>    
+      <Event>
+        <Type>AlterPosition</Type>
+        <RefName>Sphere1PAT</RefName>
+        <SimulationTime>20</SimulationTime>
+        <Position>
+          <x>5</x>
+          <y>0</y>
+          <z>10</z>
+        </Position>
+      </Event>    
+      <Event>
+        <Type>AlterPosition</Type>
+        <RefName>Sphere1PAT</RefName>
+        <SimulationTime>30</SimulationTime>
+        <Position>
+          <x>10</x>
+          <y>0</y>
+          <z>10</z>
+        </Position>
+      </Event>
+      <Event>
+        <Type>AlterPosition</Type>
+        <RefName>Sphere1PAT</RefName>
+        <SimulationTime>30</SimulationTime>
+        <Position>
+          <x>15</x>
+          <y>0</y>
+          <z>10</z>
+        </Position>
+      </Event>     
+    </Event>-->   
+  </Event>
+</Event>

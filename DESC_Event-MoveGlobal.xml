@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<Event>
+  <Name>MoveGlobal1</Name>
+  <Type>MoveGlobal</Type>
+  <TimeType>Real</TimeType>
+  <Position>
+    <x>0</x>
+    <y>0</y>
+    <z>0</z>
+  </Position>
+  <Velocity>
+    <x>0</x>
+    <y>0</y>
+    <z>5</z>
+  </Velocity>
+
+  <!--<OrientationAxis>
+        <x>1</x>
+        <y>0</y>
+        <z>0</z>
+      </OrientationAxis>
+      <AngularVelocity>-100</AngularVelocity>-->
+  <RefName>PhysX_Actor1</RefName>
+</Event>

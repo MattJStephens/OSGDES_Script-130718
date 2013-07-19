@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- Created with XMLFox -->
+
+<CustomCamera>
+  <!--<VelocityCoefficient>5</VelocityCoefficient>-->
+  <VelocityCoefficient>5</VelocityCoefficient>
+  <!--<MouseCoefficient>0.001</MouseCoefficient>-->
+  <MouseCoefficient>0.001</MouseCoefficient>
+  <UpAxis>X</UpAxis>
+</CustomCamera>

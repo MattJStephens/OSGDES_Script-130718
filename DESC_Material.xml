@@ -1,0 +1,30 @@
+<?xml version="1.0"?><!--mjs OpenSceneGraph Extensible Markup Language Process Description Script (OSG XML PDS)-->
+
+<Material>
+  <Name>White</Name>
+  <Diffuse>
+    <x>1</x>
+    <y>1</y>
+    <z>1</z>
+    <w>1</w>
+  </Diffuse>
+  <Specular>
+    <x>0.1</x>
+    <y>0.1</y>
+    <z>0.1</z>
+    <w>1</w>
+  </Specular>
+  <Ambient>
+    <x>0.1</x>
+    <y>0.1</y>
+    <z>0.1</z>
+    <w>1</w>
+  </Ambient>
+  <Emission>
+    <x>0.1</x>
+    <y>0.1</y>
+    <z>0.1</z>
+    <w>1</w>
+  </Emission>
+  <Shininess>25</Shininess>
+</Material>

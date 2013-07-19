@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<Event>
+  <Name>$Name</Name>
+  <FileName>EventTree1.xml</FileName>
+  <Type>SaveEventTree</Type>
+  <ClimaxCondition>1</ClimaxCondition>
+  <SelfDestruct>Climax</SelfDestruct>
+</Event>

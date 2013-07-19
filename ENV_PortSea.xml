@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+ 
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢  FilePath Node-->
+  <!-- note the PAT must be included in display group -->
+  <!-- or the Node if a PAT is not defined -->
+  
+  <Node>
+    <Name>Node_port_sea</Name>
+    <File>port_sea.3DS</File>    
+  </Node>
+ 
+  <PositionAttitudeTransform>
+    <Name>PAT_port_sea</Name>
+    <Ref>
+      <RefName>Node_port_sea</RefName>
+      <EntityType>Node</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Position>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </Position>    
+  </PositionAttitudeTransform>
+
+</Environment>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<Recurrance>
+  <Type>
+    <Name>Perpetual</Name>
+  </Type>
+  <Type>
+    <Name>Singular</Name>
+  </Type>
+  <Type>
+    <Name>Multiple</Name>
+  </Type>
+
+</Recurrance>
+
+

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Process Description Script (OSG XML PDS)-->
+<!--✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠-->
+<Event>
+  <Name>Sequencer1</Name>
+  <Type>Sequencer</Type>
+  <Subordination>Simultaneous</Subordination> 
+  <Event>
+   <Name>UpdatePositionParametricExpression1</Name>
+    <Type>UpdatePositionParametricExpression</Type>   
+    <RefName>Sphere1PAT</RefName>
+    <Expression>10 * sin (  t  ) </Expression>
+    <Expression>10 * cos ( t ) </Expression>
+    <Expression>5 * sin ( 5 * t ) </Expression>
+  </Event> 
+</Event>

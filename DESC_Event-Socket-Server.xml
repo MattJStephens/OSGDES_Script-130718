@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Socket>
+  <Name>Socket001</Name>
+  <Type>Server</Type>
+  <SocketAddressFamily>AF_INET</SocketAddressFamily>
+  <SocketType>SOCK_DGRAM</SocketType>
+  <SocketProtocol>0</SocketProtocol>
+  <!--<NodeName>127.0.0.1</NodeName>-->
+  <NodeName>INADDR_ANY</NodeName>
+  <ServiceName>12345</ServiceName>
+</Socket>

@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+ 
+  <!-- ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ set active indicies--> 
+  <ActiveGroupIndex>0</ActiveGroupIndex>
+  <!-- ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ Root Group-->
+  <!-- ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ Root Group-->
+  <Group>
+    <Name>RootGroup</Name>
+    <Ref>
+      <RefName>Scene</RefName>
+      <EntityType>Group</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+  </Group>
+  <!--★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ Scene Group-->
+  <Group>
+    <Name>Scene</Name>
+    <Ref>
+      <RefName>ClearNode1</RefName>
+      <EntityType>ClearNode</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>Cone1PAT</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>Cone2PAT</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>LS1PAT</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>Billboard_Palm</RefName>
+      <EntityType>Billboard</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>SmokeEffect1</RefName>
+      <EntityType>SmokeEffect</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>SmokeEffect2</RefName>
+      <EntityType>SmokeEffect</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>Node1PAT</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>Node2PAT</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>Node3PAT</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>Node4PAT</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>Node5PAT</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>GeodeLine1PAT</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+
+
+    <Ref>
+      <RefName>FilePath1PAT</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>FilePath2PAT</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>FilePath3PAT</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>Graph1</RefName>
+      <EntityType>Graph</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+
+    <Ref>
+      <RefName>HUDProjectionMatrix</RefName>
+      <EntityType>Projection</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+  </Group>
+  <!-- ⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙ Background color-->
+  <ClearNode>
+    <Name>ClearNode1</Name>
+    <ClearColor>
+      <x>0.1</x>
+      <y>0.1</y>
+      <z>0.0</z>
+      <w>1</w>
+    </ClearColor>
+  </ClearNode>
+
+
+
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    Image-->
+  <Image>
+    <Name>ScreenGrab</Name>
+    <!--<FileName>ScreenGrab.jpg</FileName>-->
+  </Image>
+  
+</Environment>

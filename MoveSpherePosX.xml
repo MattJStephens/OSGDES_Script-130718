@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Process Description Script (OSG XML PDS)-->
+<!--✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠-->
+
+<Event>
+  <Name>UpdateVelocity2</Name>
+  <Type>UpdateVelocity</Type>
+  <TimeType>Simulation</TimeType>
+  <Position>
+    <x>0</x>
+    <y>0</y>
+    <z>0</z>
+  </Position>
+  <Velocity>
+    <x>0</x>
+    <y>1</y>
+    <z>0</z>
+  </Velocity>
+  <RefName>Sphere2PAT</RefName>
+
+  <!--<Recurrance>Singular</Recurrance>
+  <ClimaxCondition>ry > 50</ClimaxCondition>
+  <ClimaxVariable>ry</ClimaxVariable>-->
+  
+  
+  <AssociateVariable>
+    <VariableAssociationType>PAT_vec</VariableAssociationType>
+    <VariableAssociationSubType>y</VariableAssociationSubType>
+    <RefAssociated>Sphere2PAT</RefAssociated>
+    <RefExpression>ry</RefExpression>
+  </AssociateVariable>
+  <SelfDestruct>Climax</SelfDestruct>
+  <Response_xml>MoveSpherePosX.xml</Response_xml>
+  <Response_xml>SaveEventTree2.xml</Response_xml>
+</Event>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Script>
+  <EnvironmentFileName>ENV_FilePaths.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Groups_MRE.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Materials.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Lights.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_CustomViewer.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_LinesAxis.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_SkyNode1.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Ripple_grass.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_MultipleRandomEntities.xml</EnvironmentFileName> 
+  <EnvironmentFileName>ENV_Text.xml</EnvironmentFileName>
+
+  <EventFileName>Event_UpdateViewerAndPos.xml</EventFileName> 
+</Script>

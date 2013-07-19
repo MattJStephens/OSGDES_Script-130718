@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--mjs-->
+<Event>
+  <Name>SubPlayWave</Name>
+  <Type>PlayWav</Type>
+  <Inception>Spontaneous</Inception>
+  <Recurrance>Singular</Recurrance>
+  <Variable>
+    <Identifier>File</Identifier>
+    <Value>wave-randomform4.wav</Value>
+  </Variable>
+  <Response_xml>SubEvent-CreateWave010.xml</Response_xml>
+  <Response_xml>SubEvent-PlayWave010.xml</Response_xml>
+</Event>

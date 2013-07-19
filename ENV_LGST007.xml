@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+
+  <!--<WriteNodeThroughputToFile>TRUE</WriteNodeThroughputToFile>-->
+  <WriteEnvStateToFile>TRUE</WriteEnvStateToFile>
+
+  <Render>TRUE</Render>
+  <!--<QuitOnMaxTime>TRUE</QuitOnMaxTime>
+  <MaxTime>3</MaxTime>-->
+
+  <!--✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇ -Logistics_nodes-->
+  <Logistics_node>
+    <Name>A</Name>
+    <PATRef>
+      <RefName>A</RefName>
+      <EntityType>PAT</EntityType>
+    </PATRef>
+  </Logistics_node>
+
+  <Logistics_node>
+    <Name>B</Name>
+    <PATRef>
+      <RefName>B</RefName>
+      <EntityType>PAT</EntityType>
+    </PATRef>
+  </Logistics_node>
+
+  <Logistics_node>
+    <Name>C</Name>
+    <PATRef>
+      <RefName>C</RefName>
+      <EntityType>PAT</EntityType>
+    </PATRef>
+  </Logistics_node>
+
+  <Logistics_node>
+    <Name>D</Name>
+    <PATRef>
+      <RefName>D</RefName>
+      <EntityType>PAT</EntityType>
+    </PATRef>
+  </Logistics_node>
+
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Logistics_components-->
+  <Logistics_component>
+    <Name>1</Name>
+    <NodeRef>
+      <RefName>1</RefName>
+      <EntityType>Node</EntityType>
+    </NodeRef>
+    <Mass>3</Mass>
+  </Logistics_component>
+
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Logistics_components-->
+  <Logistics_component>
+    <Name>2</Name>
+    <NodeRef>
+      <RefName>2</RefName>
+      <EntityType>Node</EntityType>
+    </NodeRef>
+    <Mass>4</Mass>
+  </Logistics_component>  
+  
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Logistics_producer1-->
+  <Logistics_producer>
+    <Name>A</Name>    
+    <ProductionType>Periodic</ProductionType>
+    <PeriodTotal>1</PeriodTotal>    
+    <ComponentRef>
+      <RefName>1</RefName>
+    </ComponentRef>
+    <NodeRef>
+      <RefName>A</RefName>
+    </NodeRef>
+    <TotalMass>60</TotalMass>
+    <InfiniteSupply>FALSE</InfiniteSupply>
+  </Logistics_producer>
+  
+  <Logistics_producer>
+    <Name>C</Name>
+    <ProductionType>Periodic</ProductionType>
+    <PeriodTotal>1</PeriodTotal>
+    <ComponentRef>
+      <RefName>2</RefName>
+    </ComponentRef>
+    <NodeRef>
+      <RefName>C</RefName>
+    </NodeRef>
+    <TotalMass>80</TotalMass>
+    <InfiniteSupply>FALSE</InfiniteSupply>
+  </Logistics_producer>
+  
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Logistics_demand1-->
+  <Logistics_demand>
+    <Name>B1</Name>        
+    <Type>Periodic</Type>
+    <DemandType>Periodic</DemandType>
+    <Period>2</Period>    
+    <OrderType>Continuous</OrderType>
+    <ComponentRef>
+      <RefName>1</RefName>
+    </ComponentRef>
+    <NodeRef>
+      <RefName>B</RefName>
+    </NodeRef>
+    <SourceNodeRef>
+      <RefName>A</RefName>
+    </SourceNodeRef>
+    <Logistics_operativeState>transit_store_at_destination</Logistics_operativeState>   
+  </Logistics_demand>
+ 
+  <Logistics_demand>
+    <Name>B2</Name>
+    <Type>Periodic</Type>
+    <DemandType>Periodic</DemandType>
+    <Period>2</Period>
+    <OrderType>Continuous</OrderType> 
+    <ComponentRef>
+      <RefName>2</RefName>
+    </ComponentRef>
+    <NodeRef>
+      <RefName>B</RefName>
+    </NodeRef>
+    <SourceNodeRef>
+      <RefName>C</RefName>
+    </SourceNodeRef>
+    <Logistics_operativeState>transit_store_at_destination</Logistics_operativeState>  
+  </Logistics_demand>
+
+ <Logistics_demand>
+    <Name>D1</Name>
+    <Type>Periodic</Type>
+    <DemandType>Periodic</DemandType>
+    <Period>2</Period>
+    <OrderType>Continuous</OrderType>
+    <ComponentRef>
+      <RefName>1</RefName>
+    </ComponentRef>
+    <NodeRef>
+      <RefName>D</RefName>
+    </NodeRef>
+    <SourceNodeRef>
+      <RefName>B</RefName>
+    </SourceNodeRef>
+    <Logistics_operativeState>transit_store_at_destination</Logistics_operativeState>
+  </Logistics_demand>
+  
+  <!--
+  <Logistics_demand>
+    <Name>D2</Name>
+    <Type>Periodic</Type>
+    <DemandType>Periodic</DemandType>
+    <Period>2</Period>
+    <OrderType>Continuous</OrderType>
+    <ComponentRef>
+      <RefName>2</RefName>
+    </ComponentRef>
+    <NodeRef>
+      <RefName>D</RefName>
+    </NodeRef>
+    <SourceNodeRef>
+      <RefName>B</RefName>
+    </SourceNodeRef>
+    <Logistics_operativeState>transit_store_at_destination</Logistics_operativeState>
+  </Logistics_demand>-->
+</Environment>

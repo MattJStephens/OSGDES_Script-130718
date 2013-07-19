@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Line-->
+  <Vec3Array>
+    <Name>Vec3Array1</Name>
+    <FunctionOfOneVariable>
+      <!--<Expression>sin x + ( sin (3 * x) ) </Expression>-->
+      <!--<Expression>sin(2*x) + cos(3*x)</Expression>-->
+      <Expression>bessel(20*x)</Expression>      
+      <StartX>-20</StartX>     
+      <EndX>20</EndX>     
+      <NumPtsX>1000</NumPtsX>   
+    </FunctionOfOneVariable> 
+  </Vec3Array>
+  <DrawArrays>
+    <Name>DrawArrays1</Name>
+    <PrimitiveSet>LINE_STRIP</PrimitiveSet>
+    <SetFirst>0</SetFirst>
+    <SetCount>1000</SetCount>
+  </DrawArrays>
+  <Geometry>
+    <Name>Geometry1</Name>
+    <Ref>
+      <RefName>DrawArrays1</RefName>
+      <EntityType>DrawArrays</EntityType>
+      <RefType>AddPrimitiveSet</RefType>
+    </Ref>    
+    <Ref>
+      <RefName>Vec3Array1</RefName>
+      <EntityType>Vec3Array</EntityType>
+      <RefType>SetVertexArray</RefType>
+    </Ref>   
+  </Geometry>
+  <Geode>
+    <Name>GeodeLine1</Name>   
+    <Ref>
+      <RefName>Geometry1</RefName>
+      <EntityType>Geometry</EntityType>
+      <RefType>AddDrawable</RefType>
+    </Ref>
+    <Ref>
+      <RefName>White</RefName>
+      <EntityType>Material</EntityType>
+      <RefType>SetAttribute</RefType>
+    </Ref>
+  </Geode>
+  <PositionAttitudeTransform>
+    <Name>GeodeLine1PAT</Name>
+    <Position>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </Position>
+    <Orientation>
+      <Axis>
+        <x>1</x>
+        <y>0</y>
+        <z>0</z>
+      </Axis>
+      <Angle>1.57</Angle>
+    </Orientation>
+    <Ref>
+      <RefName>GeodeLine1</RefName>
+      <EntityType>Geode</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+  </PositionAttitudeTransform>
+  
+</Environment>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?><!--mjs--><Environment>
+	<ActiveGroupIndex>0</ActiveGroupIndex>
+	<ActiveViewerIndex>0</ActiveViewerIndex>
+	<Group>
+	<Name>$Group</Name>
+	<Ref>
+	<RefName></RefName>
+	<EntityType>PAT</EntityType>
+	<RefType>AddChild</RefType></Ref></Group>
+	<Viewer>
+	<Name>Viewer1</Name>
+	<CameraManipulator>OrbitManipulator</CameraManipulator>
+	<SetUpViewInWindow>
+	<x>50</x>
+	<y>50</y>
+	<width>1024</width>
+	<height>768</height></SetUpViewInWindow></Viewer></Environment>

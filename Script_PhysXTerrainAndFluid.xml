@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Script> 
+  <EnvironmentFileName>Environment_PhysXTerrainAndFluid.xml</EnvironmentFileName>
+  <EventFileName>Event_CustomViewer.xml</EventFileName> 
+</Script>

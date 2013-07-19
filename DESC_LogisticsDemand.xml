@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- Created with XMLFox -->
+<Logistics_demand>
+  <Name>Logistics_demand1</Name>
+  <Type>Periodic</Type>
+  <ComponentRef>
+    <RefName>Logistics_component1</RefName>
+  </ComponentRef>
+  <NodeRef>
+    <RefName>Logistics_node2</RefName>
+  </NodeRef>
+  <SourceNodeRef>
+    <RefName>Logistics_node1</RefName>
+  </SourceNodeRef>
+  <Period>0.9</Period>
+  <Logistics_operativeState>transit_destroy_at_destination</Logistics_operativeState>
+</Logistics_demand>

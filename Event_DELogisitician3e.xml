@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Process Description Script (OSG XML PDS)-->
+<!--✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠-->
+<Event>
+  <Name>Sequencer1</Name>
+  <Type>Sequencer</Type>
+  <Subordination>Simultaneous</Subordination>
+  <Event>
+    <Name>SaveEventTree</Name>
+    <FileName>EventTree1.xml</FileName>
+    <Type>SaveEventTree</Type>
+    <Recurrance>Singular</Recurrance>
+  </Event>
+  <!--★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ AlterText -->
+  <Event>
+    <Name>AlterText1</Name>
+    <Type>AlterText</Type>
+    <AlterString>ElapsedTime</AlterString>
+    <RefName>T1</RefName>
+  </Event>
+  <Event>
+    <Name>AlterText2</Name>
+    <Type>AlterText</Type>
+    <AlterString>ElapsedSimulationTime</AlterString>
+    <RefName>T2</RefName>
+  </Event>
+  <Event>
+    <Name>DE_Logistics1</Name>
+    <Type>DE_Logistics</Type>
+    <Variable>
+      <Identifier>Group</Identifier>
+      <Value>Scene</Value>
+      <DataType>String</DataType>
+    </Variable>
+    
+    <Variable>
+      <Identifier>TimeType</Identifier>
+      <Value>Real</Value>
+      <DataType>String</DataType>
+    </Variable>
+    <Variable>
+      <Identifier>DE_Producer</Identifier>
+      <Value>DE_Producer1</Value>
+      <DataType>String</DataType>
+    </Variable>
+    <Variable>
+      <Identifier>DE_Component</Identifier>
+      <Value>DE_Component1</Value>
+      <DataType>String</DataType>
+    </Variable>
+    <Variable>
+      <Identifier>DE_Demand</Identifier>
+      <Value>DE_Demand1</Value>
+      <DataType>String</DataType>
+    </Variable>
+    <Variable>
+      <Identifier>DE_Demand</Identifier>
+      <Value>DE_Demand2</Value>
+      <DataType>String</DataType>
+    </Variable>
+    <Variable>
+      <Identifier>DE_Demand</Identifier>
+      <Value>DE_Demand3</Value>
+      <DataType>String</DataType>
+    </Variable>
+    <Variable>
+      <Identifier>DE_Demand</Identifier>
+      <Value>DE_Demand4</Value>
+      <DataType>String</DataType>
+    </Variable>
+    <Variable>
+      <Identifier>Speed</Identifier>
+      <Value>5</Value>
+      <DataType>Float</DataType>
+    </Variable>
+    <Variable>
+      <Identifier>StackingDistance</Identifier>
+      <Value>1.5</Value>
+      <DataType>Float</DataType>
+    </Variable>
+    
+  </Event>
+  <Event>
+    <Name>DiscreteEventSimulation1</Name>
+    <Type>DiscreteEventSimulation</Type>
+  </Event>
+</Event>

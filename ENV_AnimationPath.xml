@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+  
+
+  <AnimationControlPoint>
+    <Name>ACP1</Name>
+    <Point>
+      <x>54975</x>
+      <y>78711</y>
+      <z>-5000</z>
+    </Point>
+    <Time>0</Time>
+  </AnimationControlPoint>
+
+ 
+  <AnimationControlPoint>
+    <Name>ACP2</Name>
+    <Point>
+      <x>-73196</x>
+      <y>52228</y>
+      <z>-6000</z>
+    </Point>
+    <Time>7</Time>
+  </AnimationControlPoint>
+
+ 
+  <AnimationControlPoint>
+    <Name>ACP3</Name>
+    <Point>
+      <x>-67983</x>
+      <y>-38711</y>
+      <z>-1000</z>
+      
+    </Point>
+    <Time>40</Time>
+  </AnimationControlPoint>
+  
+
+  <AnimationPath>
+    <Name>AnimationPath1</Name>
+    <SetLoopMode>NO_LOOPING</SetLoopMode>
+    <Ref>
+      <RefName>ACP1</RefName>
+      <EntityType>AnimationControlPoint</EntityType>
+      <RefType>Insert</RefType>
+    </Ref>
+    <Ref>
+      <RefName>ACP2</RefName>
+      <EntityType>AnimationControlPoint</EntityType>
+      <RefType>Insert</RefType>
+    </Ref>
+    <Ref>
+      <RefName>ACP3</RefName>
+      <EntityType>AnimationControlPoint</EntityType>
+      <RefType>Insert</RefType>
+    </Ref>
+  </AnimationPath>
+  
+  
+</Environment>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Event>
+  <Name>Sequencer1</Name>
+  <Type>Sequencer</Type>
+  <Subordination>Simultaneous</Subordination>
+  <Event>
+    <Name>UpdateViewer1</Name>
+    <Type>UpdateViewer</Type>
+    <ViewerUpdateType>UpdateCamera</ViewerUpdateType>
+    <CameraUpdateType>SetViewMatrix</CameraUpdateType>
+  </Event>  
+ </Event>

@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+
+
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Line-->
+  <Vec3Array>
+    <Name>Vec3Array_H2</Name>
+    <Vec3d>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </Vec3d>
+    <Vec3d>
+      <x>50</x>
+      <y>0</y>
+      <z>0</z>
+    </Vec3d>
+  </Vec3Array>
+  <DrawArrays>
+    <Name>DrawArrays_H2</Name>
+    <PrimitiveSet>LINES</PrimitiveSet>
+    <SetFirst>0</SetFirst>
+    <SetCount>LAST</SetCount>
+  </DrawArrays>
+  
+  <Geometry>
+    <Name>Geometry_H2</Name>
+    <Ref>
+      <RefName>DrawArrays_H2</RefName>
+      <EntityType>DrawArrays</EntityType>
+      <RefType>AddPrimitiveSet</RefType>
+    </Ref>
+    <Ref>
+      <RefName>Vec3Array_H2</RefName>
+      <EntityType>Vec3Array</EntityType>
+      <RefType>SetVertexArray</RefType>
+    </Ref>
+  </Geometry>
+  
+  <StateSet>
+    <Name>StateSet1</Name>
+    <SetMode>GL_LINE_SMOOTH_ON</SetMode>
+    <Ref>
+      <RefName>Geometry_H2</RefName>
+      <EntityType>Geometry</EntityType>
+      <RefType>SetStateSet</RefType>
+    </Ref>
+  </StateSet>
+  
+  <Geode>
+    <Name>GeodeLine_H2</Name>
+    <Ref>
+      <RefName>Geometry_H2</RefName>
+      <EntityType>Geometry</EntityType>
+      <RefType>AddDrawable</RefType>
+    </Ref>
+    <Ref>
+      <RefName>French_raspberry</RefName>
+      <EntityType>Material</EntityType>
+      <RefType>SetAttribute</RefType>
+    </Ref>
+  </Geode>
+
+  
+  
+  <!--<StateSet>
+    <Name>StateSet1</Name>
+    <SetMode>GL_LINE_SMOOTH_ON</SetMode>
+    <Ref>
+      <RefName>GeodeLine_H2</RefName>
+      <EntityType>Geode</EntityType>
+      <RefType>SetStateSet</RefType>
+    </Ref>
+  </StateSet>-->
+  
+  <PositionAttitudeTransform>
+    <Name>PAT_H2</Name>
+    <Position>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </Position>
+    <Ref>
+      <RefName>GeodeLine_H2</RefName>
+      <EntityType>Geode</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+  </PositionAttitudeTransform>
+ 
+  
+</Environment>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<RefType>
+  <Type>
+    <Name>Undefined</Name>
+  </Type>
+  <Type>
+    <Name>AddChild</Name>
+  </Type>
+
+  <Type>
+    <Name>AddChildArray</Name>
+  </Type>
+  <Type>
+    <Name>AddDrawable</Name>
+  </Type>
+  <Type>
+    <Name>AddEventHandler</Name>
+  </Type>
+  <Type>
+    <Name>AddPrimitiveSet</Name>
+  </Type>
+  <Type>
+    <Name>AddShader</Name>
+  </Type>
+  <Type>
+    <Name>AddShape</Name>
+  </Type>
+  <Type>
+    <Name>AddUniform</Name>
+  </Type>
+  <Type>
+    <Name>Collate</Name>
+  </Type>
+  <Type>
+    <Name>CreateArray</Name>
+  </Type>
+  <Type>
+    <Name>Insert</Name>
+  </Type>
+  <Type>
+    <Name>Optimize</Name>
+  </Type>
+  <Type>
+    <Name>Root</Name>
+  </Type>
+
+  <Type>
+    <Name>SetAttribute</Name>
+  </Type>
+  <Type>
+    <Name>SetAttributeAndModes</Name>
+  </Type>
+  <Type>
+    <Name>SetAddress</Name>
+  </Type>
+  <Type>
+    <Name>SetCount</Name>
+  </Type>
+  <Type>
+    <Name>SetColorArray</Name>
+  </Type>
+  <Type>
+    <Name>SetColorBinding</Name>
+  </Type>
+  <Type>
+    <Name>SetCameraManipulator</Name>
+  </Type>
+  <Type>
+    <Name>SetDataVariance</Name>
+  </Type>
+   
+  <Type>
+    <Name>SetLight</Name>
+  </Type>
+
+  <Type>
+    <Name>SetMatrix</Name>
+  </Type>
+  <Type>
+    <Name>SetMode</Name>
+  </Type>
+  <Type>
+    <Name>SetNormalArray</Name>
+  </Type>
+  <Type>
+    <Name>SetNormalBinding</Name>
+  </Type>
+  <Type>
+    <Name>SetSceneData</Name>
+  </Type>
+  <Type>
+    <Name>SetStateSet</Name>
+  </Type>
+  <Type>
+    <Name>SetStateSetMode</Name>
+  </Type>
+  <Type>
+    <Name>SetStateSetModesOn</Name>
+  </Type>
+ 
+  <Type>
+    <Name>SetStateSetModesOff</Name>
+  </Type>
+  <Type>
+    <Name>SetTexCoordArray</Name>
+  </Type>
+
+  <Type>
+    <Name>SetTextureAttributesAndModes</Name>
+  </Type>
+
+  <Type>
+    <Name>SetUpdateCallback</Name>
+  </Type>
+
+  <Type>
+    <Name>SetVertexArray</Name>
+  </Type>
+
+  <Type>
+    <Name>SetZIntersect</Name>
+  </Type>
+
+
+</RefType>
+

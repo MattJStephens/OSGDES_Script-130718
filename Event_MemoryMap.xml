@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<Event>
+  <Name>Sequencer</Name>
+  <Type>Sequencer</Type>
+  <Subordination>PeriodicSimultaneous</Subordination>
+  <Period>10</Period>
+  
+  <Event>
+    <Type>UpdateText</Type>
+
+    <Variable>
+      <Identifier>Text</Identifier>
+      <Value>T1</Value>
+    </Variable>
+    <Variable>
+      <Identifier>MemoryMapClient</Identifier>
+      <Value>MemoryMapClient</Value>
+    </Variable>
+  
+  </Event>
+</Event>

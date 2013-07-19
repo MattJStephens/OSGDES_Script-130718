@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<Climax>
+  <Type>
+    <Name>Immediate</Name>
+  </Type>
+  <Type>
+    <Name>Conditional</Name>
+  </Type> 
+</Climax>
+
+

@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+  
+  <!--✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵   PhysX_Actor-->
+  <PhysX_Actor>
+    <Name>PhysX_Actor2</Name>
+    <UserData>void_ptr</UserData>
+    <PhysX_ActorDesc>
+      <Density>5</Density>
+      <NxGlobalPose>
+        <t>
+          <x>10</x>
+          <y>20</y>
+          <z>-10</z>
+        </t>
+      </NxGlobalPose>      
+      <NxBodyDesc>
+        <AngularDamping>0</AngularDamping>
+      </NxBodyDesc>
+      <NxSphereShapeDesc>
+        <radius>3</radius>
+      </NxSphereShapeDesc>    
+    </PhysX_ActorDesc>  
+    <ApplyShaderColor>false</ApplyShaderColor>    
+  </PhysX_Actor>
+
+
+  <PhysX_Actor>
+    <Name>PhysX_Actor3</Name>
+    <UserData>void_ptr</UserData>
+    <PhysX_ActorDesc>
+      <Density>5</Density>
+      <NxGlobalPose>
+        <t>
+          <x>7</x>
+          <y>20</y>
+          <z>-7</z>
+        </t>
+      </NxGlobalPose>
+      <NxBodyDesc>
+        <AngularDamping>0</AngularDamping>
+      </NxBodyDesc>
+      <NxSphereShapeDesc>
+        <radius>1</radius>
+      </NxSphereShapeDesc>
+    </PhysX_ActorDesc>
+    <ApplyShaderColor>false</ApplyShaderColor>
+  </PhysX_Actor>
+  
+  <PhysX_Actor>
+    <Name>PhysX_Actor4</Name>
+    <UserData>void_ptr</UserData>
+    <PhysX_ActorDesc>
+      <Density>5</Density>
+      <NxGlobalPose>
+        <t>
+          <x>2</x>
+          <y>20</y>
+          <z>-3</z>
+        </t>
+      </NxGlobalPose>
+      <NxBodyDesc>
+        <AngularDamping>0</AngularDamping>
+      </NxBodyDesc>
+      <NxSphereShapeDesc>
+        <radius>2</radius>
+      </NxSphereShapeDesc>
+    </PhysX_ActorDesc>
+    <ApplyShaderColor>false</ApplyShaderColor>
+  </PhysX_Actor>
+  
+  <PhysX_Actor>
+    <Name>PhysX_Actor5</Name>
+    <UserData>void_ptr</UserData>
+    <PhysX_ActorDesc>
+      <Density>5</Density>
+      <NxGlobalPose>
+        <t>
+          <x>-30</x>
+          <y>20</y>
+          <z>-31</z>
+        </t>
+      </NxGlobalPose>
+      <NxBodyDesc>
+        <AngularDamping>0</AngularDamping>
+      </NxBodyDesc>
+      <NxSphereShapeDesc>
+        <radius>6</radius>
+      </NxSphereShapeDesc>
+    </PhysX_ActorDesc>
+    <ApplyShaderColor>false</ApplyShaderColor>
+  </PhysX_Actor>
+
+
+
+</Environment>

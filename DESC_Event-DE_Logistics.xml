@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Event>
+  <Name>$Name</Name>
+  <Type>DE_Logistics</Type>
+  <Variable>
+    <Identifier>Group</Identifier>
+    <Value>Scene</Value>
+    <DataType>String</DataType>
+  </Variable>
+  <Variable>
+    <Identifier>TimeType</Identifier>
+    <Value>Real</Value>
+    <DataType>String</DataType>
+  </Variable>
+  <Variable>
+    <Identifier>Logistics_producer</Identifier>
+    <Value>Logistics_producer1</Value>
+    <DataType>String</DataType>
+  </Variable>
+  <Variable>
+    <Identifier>Logistics_component</Identifier>
+    <Value>Logistics_component1</Value>
+    <DataType>String</DataType>
+  </Variable>
+  <Variable>
+    <Identifier>Logistics_demand</Identifier>
+    <Value>Logistics_demand1</Value>
+    <DataType>String</DataType>
+  </Variable>
+  <Variable>
+    <Identifier>Speed</Identifier>
+    <Value>2.5</Value>
+    <DataType>Float</DataType>
+  </Variable>
+  <Variable>
+    <Identifier>StackingDistance</Identifier>
+    <Value>1.5</Value>
+    <DataType>Float</DataType>
+  </Variable>
+</Event>

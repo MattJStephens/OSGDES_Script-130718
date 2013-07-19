@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Script>
+  <EnvironmentFileName>ENV_FilePaths.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Groups.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Materials.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Lights.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Viewer.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_LineFOOV_001.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Text.xml</EnvironmentFileName>
+
+  <EventFileName>Event_CustomViewer.xml</EventFileName> 
+</Script>

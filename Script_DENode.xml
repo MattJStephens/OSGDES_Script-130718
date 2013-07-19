@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<Script>
+  <EnvironmentFileName>Environment_Logistics_node.xml</EnvironmentFileName>
+  <EventFileName>Event_Logistics_node.xml</EventFileName>
+</Script>

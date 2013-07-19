@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Geode>
+  <Name>$Geode</Name>
+  <Box>
+    <Center>
+      <x>0.01</x>
+      <y>0.02</y>
+      <z>0.03</z>
+    </Center>
+    <x>1.04</x>
+    <y>1.05</y>
+    <z>1.06</z>
+  </Box>
+  <!--<Ref>
+    <RefName>$Material</RefName>
+    <EntityType>Material</EntityType>
+    <RefType>SetAttribute</RefType>
+  </Ref>-->
+</Geode>

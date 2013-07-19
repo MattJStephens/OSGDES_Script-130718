@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+
+  <!--✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵  text-->
+  <Text>
+    <Name>T1</Name>
+    <CharacterSize>25</CharacterSize>
+    <Font>impact.ttf</Font>
+    <InitText>T1</InitText>
+    <AxisAlignment>SCREEN</AxisAlignment>
+    <Position>
+      <x>10</x>
+      <y>10</y>
+      <z>-1.5</z>
+    </Position>
+    <Color>
+      <x>199</x>
+      <y>77</y>
+      <z>15</z>
+      <w>1</w>
+    </Color>
+  </Text>
+  
+  <Text>
+    <Name>T2</Name>
+    <CharacterSize>25</CharacterSize>
+    <Font>impact.ttf</Font>
+    <InitText>T2</InitText>
+    <AxisAlignment>SCREEN</AxisAlignment>
+    <Position>
+      <x>10</x>
+      <y>100</y>
+      <z>-1.5</z>
+    </Position>
+    <Color>
+      <x>199</x>
+      <y>77</y>
+      <z>15</z>
+      <w>1</w>
+    </Color>
+  </Text>
+  
+  <Geode>
+    <Name>HUD_Geode</Name>
+    <Ref>
+      <RefName>T1</RefName>
+      <EntityType>Text</EntityType>
+      <RefType>AddDrawable</RefType>
+    </Ref>
+    <Ref>
+      <RefName>T2</RefName>
+      <EntityType>Text</EntityType>
+      <RefType>AddDrawable</RefType>
+    </Ref>
+  </Geode>
+  
+  <Projection>
+    <Name>HUDProjectionMatrix</Name>
+    <Ortho2D>
+      <Left>0</Left>
+      <Right>1024</Right>
+      <Bottom>0</Bottom>
+      <Top>768</Top>
+    </Ortho2D>
+    <Ref>
+      <RefName>HUDModelViewMatrix</RefName>
+      <EntityType>MatrixTransform</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+  </Projection>
+  
+  <MatrixTransform>
+    <Name>HUDModelViewMatrix</Name>
+    <Identity></Identity>
+    <ReferenceFrame>ABSOLUTE_RF</ReferenceFrame>
+    <Ref>
+      <RefName>HUD_Geode</RefName>
+      <EntityType>Geode</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+  </MatrixTransform>
+  
+</Environment>

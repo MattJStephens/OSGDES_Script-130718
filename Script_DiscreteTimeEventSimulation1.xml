@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<Script>
+  <EnvironmentFileName>Environment_Sphere.xml</EnvironmentFileName>
+  <EventFileName>Event_DiscreteTimeEventSimulation1.xml</EventFileName>
+</Script>

@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Process Description Script (OSG XML PDS)-->
+<!--✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠-->
+<Event>
+  <Name>Sequencer1</Name>
+  <Type>Sequencer</Type>
+  <Subordination>Simultaneous</Subordination>
+  <Event>
+    <Name>SaveEventTree</Name>
+    <FileName>EventTree1.xml</FileName>
+    <Type>SaveEventTree</Type>
+    <Recurrance>Singular</Recurrance>
+  </Event>
+  <!--★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ AlterText -->
+  <Event>
+    <Name>AlterText1</Name>
+    <Type>AlterText</Type>
+    <AlterString>ElapsedTime</AlterString>
+    <RefName>T1</RefName>
+  </Event>
+  <Event>
+    <Name>AlterText2</Name>
+    <Type>AlterText</Type>
+    <AlterString>ElapsedSimulationTime</AlterString>
+    <RefName>T2</RefName>
+  </Event>
+ 
+ 
+    <Event>
+      <Name>DE_Logistics1</Name>
+      <Type>DE_Logistics</Type>
+      <Variable>
+        <Identifier>Group</Identifier>
+        <Value>Scene</Value>
+        <DataType>String</DataType>
+      </Variable>
+      <Variable>
+        <Identifier>TimeType</Identifier>
+        <Value>Real</Value>
+        <DataType>String</DataType>
+      </Variable>
+      <Variable>
+        <Identifier>Logistics_producer</Identifier>
+        <Value>Logistics_producer1</Value>
+        <DataType>String</DataType>
+      </Variable>
+      <Variable>
+        <Identifier>Logistics_component</Identifier>
+        <Value>Logistics_component1</Value>
+        <DataType>String</DataType>
+      </Variable>
+      <Variable>
+        <Identifier>Logistics_demand</Identifier>
+        <Value>Logistics_demand1</Value>
+        <DataType>String</DataType>
+      </Variable>  
+      <Variable>
+        <Identifier>Speed</Identifier>
+        <Value>2.5</Value>
+        <DataType>Float</DataType>
+      </Variable>
+      <Variable>
+        <Identifier>StackingDistance</Identifier>
+        <Value>1.5</Value>
+        <DataType>Float</DataType>
+      </Variable>
+    </Event>
+    
+    <Event>
+      <Name>DE_Logistics2</Name>
+      <Type>DE_Logistics</Type>
+      <Variable>
+        <Identifier>Group</Identifier>
+        <Value>Scene</Value>
+        <DataType>String</DataType>
+      </Variable>
+      <Variable>
+        <Identifier>TimeType</Identifier>
+        <Value>Real</Value>
+        <DataType>String</DataType>
+      </Variable>
+      <Variable>
+        <Identifier>Logistics_producer</Identifier>
+        <Value>Logistics_producer2</Value>
+        <DataType>String</DataType>
+      </Variable>
+      <Variable>
+        <Identifier>Logistics_component</Identifier>
+        <Value>Logistics_component2</Value>
+        <DataType>String</DataType>
+      </Variable>    
+      <Variable>
+        <Identifier>Logistics_demand</Identifier>
+        <Value>Logistics_demand2</Value>
+        <DataType>String</DataType>
+      </Variable>     
+      <Variable>
+        <Identifier>Speed</Identifier>
+        <Value>2.5</Value>
+        <DataType>Float</DataType>
+      </Variable>
+      <Variable>
+        <Identifier>StackingDistance</Identifier>
+        <Value>2.5</Value>
+        <DataType>Float</DataType>
+      </Variable>
+    </Event>
+
+
+    <Event>
+      <Name>UpdateTheatreOfOperations</Name>
+      <Type>UpdateTheatreOfOperations</Type>
+      <Variable>
+        <Identifier>TimeType</Identifier>
+        <Value>Real</Value>
+        <DataType>String</DataType>
+      </Variable>
+    </Event>
+
+    <Event>
+      <Name>UpdateGraph1</Name>
+      <Type>UpdateGraph</Type>
+      <Variable>
+        <Identifier>Graph</Identifier>
+        <Value>Graph1</Value>
+        <DataType>String</DataType>
+      </Variable>
+      <Variable>
+        <Identifier>Logistics_node</Identifier>
+        <Value>Logistics_node3</Value>
+        <DataType>String</DataType>
+      </Variable>
+    </Event>
+ 
+
+</Event>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--mjs-->
+<Event>
+  <Name>$Name</Name>
+  <Type>Sequencer</Type>
+  <Subordination>Simulataneous</Subordination>
+  <Event>
+    <Name>$Name</Name>
+    <Type>AlterOrientation</Type>
+    <Variable>
+      <Identifier>PAT</Identifier>
+      <Value>PositionAttitudeTransform2</Value>
+    </Variable>
+    <Variable>
+      <Identifier>Qx</Identifier>
+      <Value>0.1</Value>
+    </Variable>
+    <Variable>
+      <Identifier>Qy</Identifier>
+      <Value>0.3</Value>
+    </Variable>
+    <Variable>
+      <Identifier>Qz</Identifier>
+      <Value>-1.7</Value>
+    </Variable>
+    <Variable>
+      <Identifier>Qw</Identifier>
+      <Value>0</Value>
+    </Variable>
+    <Inception>Spontaneous</Inception>
+    <Occurance>Discrete</Occurance>
+    <Recurrance>Singular</Recurrance>
+  </Event>
+</Event>

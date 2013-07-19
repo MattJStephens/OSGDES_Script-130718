@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+
+  <!--✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇ -Logistics_nodes-->
+  <Logistics_node>
+    <Name>Logistics_node1</Name>
+    <PATRef>
+      <RefName>Node1PAT</RefName>
+      <EntityType>PAT</EntityType>
+    </PATRef>
+  </Logistics_node>
+
+  <Logistics_node>
+    <Name>Logistics_node2</Name>
+    <PATRef>
+      <RefName>Node2PAT</RefName>
+      <EntityType>PAT</EntityType>
+    </PATRef>
+  </Logistics_node>
+
+  <Logistics_node>
+    <Name>Logistics_node3</Name>
+    <PATRef>
+      <RefName>Node3PAT</RefName>
+      <EntityType>PAT</EntityType>
+    </PATRef>
+  </Logistics_node>
+ 
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Logistics_components-->
+  <Logistics_component>
+    <Name>Logistics_component1</Name>
+    <NodeRef>
+      <RefName>Node_Product1</RefName>
+      <EntityType>Node</EntityType>
+    </NodeRef>
+  </Logistics_component> 
+
+
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Logistics_producer1-->
+  <Logistics_producer>
+    <Name>Logistics_producer1</Name>
+    <ProductionType>Periodic</ProductionType>
+    <PeriodTotal>3</PeriodTotal>
+    <ComponentRef>
+      <RefName>Logistics_component1</RefName>
+    </ComponentRef>
+    <NodeRef>
+      <RefName>Logistics_node1</RefName>
+    </NodeRef>
+  </Logistics_producer>
+
+
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Logistics_demand1-->
+  <Logistics_demand>
+    <Name>Logistics_demand1</Name>
+    <Type>Periodic</Type>
+    <DemandType>Periodic</DemandType>
+    <!--<OrderType>DES</OrderType>-->
+    <OrderType>Continuous</OrderType>
+    <ComponentRef>
+      <RefName>Logistics_component1</RefName>
+    </ComponentRef>
+    <NodeRef>
+      <RefName>Logistics_node2</RefName>
+    </NodeRef>
+    <SourceNodeRef>
+      <RefName>Logistics_node1</RefName>
+    </SourceNodeRef>
+    <Period>4</Period>
+    <Logistics_operativeState>transit_store_at_destination</Logistics_operativeState>
+    <!--<Logistics_operativeState>transit_destroy_at_destination</Logistics_operativeState>-->
+  </Logistics_demand>
+
+ </Environment>

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Process Description Script (OSG XML PDS)-->
+<Event>
+  <Type>LoopChildSequential</Type>
+  <UpdateType>UpdateLoopSequential</UpdateType>
+  <Event>
+    <Type>LoopChildSequential</Type>
+    <UpdateType>UpdateLoopSequential</UpdateType>
+    <Period>1</Period>
+    <Event>
+      <Type>AlterPosition</Type>
+      <RefPATName>Sphere1PAT</RefPATName>
+      <StartTime>10</StartTime>
+      <Position>
+        <x>0</x>
+        <y>10</y>
+        <z>0</z>
+      </Position>
+    </Event>
+    
+    <Event>
+      <Name>$Name</Name>
+      <Type>AlterPosition</Type>
+      <Variable>
+        <Identifier>RefPAT</Identifier>
+        <Value>Sphere1PAT</Value>
+      </Variable>
+      <Variable>
+        <Identifier>x</Identifier>
+        <Value>0</Value>
+      </Variable>
+      <Variable>
+        <Identifier>y</Identifier>
+        <Value>20</Value>
+      </Variable>
+      <Variable>
+        <Identifier>z</Identifier>
+        <Value>0</Value>
+      </Variable>
+    </Event>
+
+    <Event>
+      <Type>AlterPosition</Type>
+      <RefPATName>Sphere1PAT</RefPATName>
+      <StartTime>30</StartTime>
+      <Position>
+        <x>0</x>
+        <y>30</y>
+        <z>0</z>
+      </Position>
+    </Event>
+  </Event>
+</Event>

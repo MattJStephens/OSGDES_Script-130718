@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!--★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ CreatePhysXActor -->
+<Event>
+  <Name>CreatePhysXActor1</Name>
+  <Type>CreatePhysXActor</Type>
+  <Variable>
+    <Identifier>PhysX_actor</Identifier>
+    <Value>PhysX_Actor1</Value>
+    <DataType>String</DataType>
+  </Variable>
+  <Variable>
+    <Identifier>Group</Identifier>
+    <Value>Scene</Value>
+    <DataType>String</DataType>
+  </Variable>
+</Event>

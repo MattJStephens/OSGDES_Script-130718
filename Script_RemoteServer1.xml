@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Script>
+  <EnvironmentFileName>Environment_RemoteServer1.xml</EnvironmentFileName>
+  <EventFileName>Event_RemoteServer1.xml</EventFileName>
+</Script>

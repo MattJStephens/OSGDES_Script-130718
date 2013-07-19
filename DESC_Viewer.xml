@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- Created with XMLFox -->
+<Viewer>
+  <Name>Viewer1</Name>
+  <!--<CameraManipulator>TrackballManipulator</CameraManipulator>-->
+  <!--<CameraManipulator>FlightManipulator</CameraManipulator>-->
+  <!--<CameraManipulator>DriveManipulator</CameraManipulator>-->
+  <!--<CameraManipulator>OrbitManipulator</CameraManipulator>-->
+  <CameraManipulator>OrbitManipulator</CameraManipulator>
+  <SetUpViewInWindow>
+    <x>50</x>
+    <y>50</y>
+    <width>1024</width>
+    <height>768</height>
+  </SetUpViewInWindow>
+</Viewer>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+ 
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    FilePath1-->
+ 
+  <Node>
+    <Name>Node_BaySky</Name>
+    <File>sky_dome_bay.3DS</File>
+    <Ref>
+      <RefName>WhiteEmissive</RefName>
+      <EntityType>Material</EntityType>
+      <RefType>SetAttribute</RefType>
+    </Ref>
+  </Node>
+  
+  <StateSet>
+    <Name>StateSet_BaySky</Name>
+    <SetMode>GL_LIGHTING_OFF</SetMode>
+    <Ref>
+      <RefName>Node_BaySky</RefName>
+      <EntityType>Node</EntityType>
+      <RefType>SetStateSet</RefType>
+    </Ref>
+  </StateSet>
+  
+  <PositionAttitudeTransform>
+    <Name>PAT_BaySky</Name>
+    <Ref>
+      <RefName>Node_BaySky</RefName>
+      <EntityType>Node</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Position>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </Position>
+    <!--<Scale>
+      <x>0.1</x>
+      <y>0.1</y>
+      <z>0.1</z>
+    </Scale>-->
+  </PositionAttitudeTransform>
+</Environment>

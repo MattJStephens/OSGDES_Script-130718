@@ -1,0 +1,18 @@
+<?xml version="1.0"?><!--mjs OpenSceneGraph Extensible Markup Language Process Description Script (OSG XML PDS)--><Environment>
+	<Node>
+	<Name>Node_ripple_grass</Name>
+	<File>ripple_grass.3DS</File></Node>
+	<PositionAttitudeTransform>
+	<Name>PAT_ripple_grass</Name>
+	<Ref>
+	<RefName>Node_ripple_grass</RefName>
+	<EntityType>Node</EntityType>
+	<RefType>AddChild</RefType></Ref>
+	<Position>
+	<x>0</x>
+	<y>0</y>
+	<z>0</z></Position>
+	<Scale>
+	<x>5</x>
+	<y>5</y>
+	<z>1</z></Scale></PositionAttitudeTransform></Environment>

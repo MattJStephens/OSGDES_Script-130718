@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<Event>
+  <Name>$Name</Name>
+  <Type>LoadScript</Type>
+  <Inception>MemMap_Conditional</Inception>
+  <Variable>
+    <Identifier>mem_map_str</Identifier>
+    <Value>MJSRTF_Server</Value>
+    <DataType>String</DataType>
+  </Variable>
+  <Variable>
+    <Identifier>file_name</Identifier>
+    <Value>Environment_Light.xml</Value>
+    <DataType>String</DataType>
+  </Variable>
+  <Variable>
+    <Identifier>mem_map_address</Identifier>
+    <Value>0</Value>
+    <DataType>integer</DataType>
+  </Variable>
+  <Variable>
+    <Identifier>mem_test</Identifier>
+    <Value>x</Value>
+    <DataType>char</DataType>
+  </Variable>
+  <ClimaxCondition>1</ClimaxCondition>
+  <SelfDestruct>Climax</SelfDestruct>
+</Event>

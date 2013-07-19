@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Event>
+  <Name>$Name</Name>
+  <Type>UpdateGraph</Type>
+  <Variable>
+    <Identifier>Graph</Identifier>
+    <Value>Graph1</Value>
+    <DataType>String</DataType>
+  </Variable>
+  <Variable>
+    <Identifier>Logistics_node</Identifier>
+    <Value>Logistics_node2</Value>
+    <DataType>String</DataType>
+  </Variable>
+</Event>

@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Process Description Script (OSG XML PDS)-->
+<!--✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠-->
+<Event>
+  <Name>Sequencer1</Name>
+  <Type>Sequencer</Type>
+  <Subordination>Simultaneous</Subordination>
+  <Event>
+    <Name>SaveEventTree</Name>
+    <FileName>EventTree1.xml</FileName>
+    <Type>SaveEventTree</Type>
+    <Recurrance>Singular</Recurrance>
+  </Event>
+  <!--★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ AlterText -->
+  <Event>
+    <Name>AlterText1</Name>
+    <Type>AlterText</Type>
+    <AlterString>ElapsedTime</AlterString>
+    <RefName>T1</RefName>
+  </Event>
+  <Event>
+    <Name>AlterText2</Name>
+    <Type>AlterText</Type>
+    <AlterString>ElapsedSimulationTime</AlterString>
+    <RefName>T2</RefName>
+  </Event>
+  <Event>
+   <Name>UpdatePositionParametricExpression1</Name>
+    <Type>UpdatePositionParametricExpression</Type>
+    <TimeType>Real</TimeType>
+    <RefName>Sphere4PAT</RefName>
+    <Expression>10 * sin (  t  ) </Expression>
+    <Expression>10 * cos ( t ) </Expression>
+    <Expression>5 * sin ( 5 * t ) </Expression>
+  </Event>
+  <Event>
+    <Name>UpdateVelocity2</Name>
+    <Type>UpdateVelocity</Type>
+    <TimeType>Real</TimeType>
+    <Position>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </Position>
+    <Velocity>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </Velocity>
+    <OrientationAxis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </OrientationAxis>
+    <AngularVelocity>100</AngularVelocity>
+     <RefName>FilePath1PAT</RefName>
+  </Event>  
+  <Event>
+    <Name>Sequencer2</Name>
+    <Type>Sequencer</Type>
+    <Subordination>PeriodicSimultaneous</Subordination>
+    <Period>1</Period>    
+    <Event>
+      <Name>UpdateSimulationTime1</Name>
+      <Type>UpdateSimulationTime</Type>
+      <SimulationTimeIncrement>10</SimulationTimeIncrement>
+    </Event>
+   
+    <Event>
+      <Name>UpdateVelocity1</Name>
+      <Type>UpdateVelocity</Type>
+      <TimeType>Simulation</TimeType>
+      <Position>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </Position>
+      <Velocity>
+        <x>0</x>
+        <y>1</y>
+        <z>0</z>
+      </Velocity>
+      <RefName>Sphere2PAT</RefName>
+
+      <!--<Recurrance>Singular</Recurrance>
+      <ClimaxCondition>ry > 50</ClimaxCondition>
+      <ClimaxVariable>ry</ClimaxVariable>-->
+      
+      
+      <AssociateVariable>
+        <VariableAssociationType>PAT_vec</VariableAssociationType>
+        <VariableAssociationSubType>y</VariableAssociationSubType>       
+        <RefAssociated>Sphere2PAT</RefAssociated>
+        <RefExpression>ry</RefExpression>
+      </AssociateVariable>     
+      <SelfDestruct>Climax</SelfDestruct>
+      <Response_xml>MoveSpherePosX.xml</Response_xml>
+      <Response_xml>SaveEventTree2.xml</Response_xml>
+    </Event>   
+  </Event>
+</Event>

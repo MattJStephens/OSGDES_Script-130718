@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<Event>
+  <Name>ScreenGrab</Name>
+  <Type>ScreenGrab</Type>
+  <Variable>
+    <Identifier>Ref_image</Identifier>
+    <Value>ScreenGrab</Value>
+  </Variable>
+  <Variable>
+    <Identifier>FileName</Identifier>
+    <Value>screen_grab</Value>
+  </Variable>
+  <Variable>
+    <Identifier>FileExtension</Identifier>
+    <Value>jpg</Value>
+  </Variable>
+  <Variable>
+    <Identifier>Height</Identifier>
+    <Value>300</Value>
+  </Variable>
+  <Variable>
+    <Identifier>Width</Identifier>
+    <Value>400</Value>
+  </Variable>
+  <Variable>
+    <Identifier>BitColor</Identifier>
+    <Value>24</Value>
+  </Variable>
+</Event>

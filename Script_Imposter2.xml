@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Script>
+  <EnvironmentFileName>ENV_FilePaths.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Groups.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Materials.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Lights.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_CustomViewer.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_LinesAxis.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_SkyNode1.xml</EnvironmentFileName>
+  <!--<EnvironmentFileName>ENV_Ripple_grass.xml</EnvironmentFileName>-->
+  <EnvironmentFileName>ENV_Imposter.xml</EnvironmentFileName> 
+  <!--<EnvironmentFileName>ENV_Billboard.xml</EnvironmentFileName>-->
+  
+  <!--<EnvironmentFileName>ENV_QuadAlphaTextured.xml</EnvironmentFileName>-->
+  <!--<EnvironmentFileName>ENV_QuadTextured.xml</EnvironmentFileName>-->
+
+  <EnvironmentFileName>ENV_Text.xml</EnvironmentFileName>
+
+  <EventFileName>Event_UpdateViewerAndPos.xml</EventFileName> 
+</Script>

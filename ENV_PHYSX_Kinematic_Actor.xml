@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    Image-->
+  <Image>
+    <Name>ScreenGrab</Name>
+    <!--<FileName>ScreenGrab.jpg</FileName>-->
+  </Image>
+  <!--✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵   PhysX_Actor-->
+  <PhysX_Actor>
+    <Name>PhysX_Actor1</Name>
+    <UserData>void_ptr</UserData>
+    <PhysX_ActorDesc>
+      <Shape>Box</Shape>
+      <Density>10</Density>
+      <NxGlobalPose>
+        <t>
+          <x>0</x>
+          <y>0</y>
+          <z>0</z>
+        </t>
+      </NxGlobalPose>      
+      <NxBodyDesc>
+        <AngularDamping>0</AngularDamping>
+        <Flag>NX_BF_KINEMATIC</Flag>
+      </NxBodyDesc>
+      <NxBoxShapeDesc>
+        <Dimensions>
+          <x>5.5</x>
+          <y>0.5</y>
+          <z>200</z>
+        </Dimensions>
+      </NxBoxShapeDesc>    
+    </PhysX_ActorDesc>   
+    <ApplyShaderColor>false</ApplyShaderColor> 
+  </PhysX_Actor>
+
+</Environment>

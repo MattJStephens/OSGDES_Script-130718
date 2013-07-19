@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- Created with XMLFox -->
+<PhysXCloth>
+  <Name>PhysXCloth2</Name>
+  <Origin>
+    <x>-7</x>
+    <y>-5</y>
+    <z>12</z>
+  </Origin>
+  <PrimitiveSetType>Points</PrimitiveSetType>
+  <h>10</h>
+  <w>2</w>
+  <d>0.2</d>
+  <Thickness>0.2</Thickness>
+  <BendingStiffness>0.9</BendingStiffness>
+  <StretchingStiffness>0.9</StretchingStiffness>
+  <Density>1</Density>
+  <Friction>0.5</Friction>
+  <DampingCoefficient>0.5</DampingCoefficient>
+  <SolverIterations>5</SolverIterations>
+  <Tear>1</Tear>
+  <!--<Texture>I:\bmp\800px-Ruby_laser.bmp</Texture>-->
+</PhysXCloth>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Event>
+  <Name>$Name</Name>
+  <Type>UpdateSimulationTime</Type>
+  <SimulationTimeIncrement>10</SimulationTimeIncrement>
+</Event>

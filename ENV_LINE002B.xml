@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Line-->
+  <!--<Vec3Array>
+    <Name>Vec3Array_honeycomb</Name>
+    <Honeycomb>
+      <x>200</x>
+      <y>100</y>
+      <z>10</z>
+    </Honeycomb>   
+  </Vec3Array>-->
+  <Vec3Array>
+    <Name>Vec3Array_honeycomb</Name>
+    <Honeycomb>
+      <x>80</x>
+      <y>40</y>
+      <z>0.8</z>
+    </Honeycomb>
+  </Vec3Array>
+  <DrawArrays>
+    <Name>DrawArrays_honeycomb</Name>
+    <PrimitiveSet>LINES</PrimitiveSet>
+    <SetFirst>0</SetFirst>
+    <!--<SetCount>LAST</SetCount>-->
+    <SetCount>LAST</SetCount>
+    <!--<SetCount>1452</SetCount>-->
+  </DrawArrays>
+  
+  <Geometry>
+    <Name>Geometry_honeycomb</Name>
+    <Ref>
+      <RefName>DrawArrays_honeycomb</RefName>
+      <EntityType>DrawArrays</EntityType>
+      <RefType>AddPrimitiveSet</RefType>
+    </Ref>    
+    <Ref>
+      <RefName>Vec3Array_honeycomb</RefName>
+      <EntityType>Vec3Array</EntityType>
+      <RefType>SetVertexArray</RefType>
+    </Ref>   
+  </Geometry>
+  
+  <Geode>
+    <Name>GeodeLine_honeycomb</Name>   
+    <Ref>
+      <RefName>Geometry_honeycomb</RefName>
+      <EntityType>Geometry</EntityType>
+      <RefType>AddDrawable</RefType>
+    </Ref>
+    <Ref>
+      <RefName>PineGreen</RefName>
+      <EntityType>Material</EntityType>
+      <RefType>SetAttribute</RefType>
+    </Ref>
+  </Geode>
+  
+  <!--<StateSet>
+    <Name>StateSet1</Name>
+    <SetMode>GL_LIGHTING_OFF</SetMode>
+    <Ref>
+      <RefName>GeodeLine_honeycomb</RefName>
+      <EntityType>Geode</EntityType>
+      <RefType>SetStateSet</RefType>
+    </Ref>
+  </StateSet>-->
+  
+  <PositionAttitudeTransform>
+    <Name>LINE2</Name>
+    <Position>
+      <x>-35</x>
+      <y>-50</y>
+      <z>-10</z>
+    </Position>
+    <Orientation>
+      <Axis>
+        <x>1</x>
+        <y>0</y>
+        <z>0</z>
+      </Axis>
+      <Angle>0</Angle>
+    </Orientation>
+    <Ref>
+      <RefName>GeodeLine_honeycomb</RefName>
+      <EntityType>Geode</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+  </PositionAttitudeTransform>
+  
+</Environment>

@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    Node_Product1-->
+  <Node>
+    <Name>Node_Product1</Name>
+    <File>mj_dodecahedron.3DS</File>
+  </Node>
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    Node_Product2-->
+  <Node>
+    <Name>Node_Product2</Name>
+    <File>mj_rhomb_cub_octahedron.3DS</File>
+
+  </Node>
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    Node_Product3-->
+  <Node>
+    <Name>Node_Product3</Name>
+    <File>mj_truncated_octahedron.3DS</File>
+  </Node>
+
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    Node1-->
+  <Node>
+    <Name>Node1</Name>
+    <File>mj_dodecahedron_stellation_yellow.3ds</File>
+  </Node>
+  <PositionAttitudeTransform>
+    <Name>Node1PAT</Name>
+    <Ref>
+      <RefName>Node1</RefName>
+      <EntityType>Node</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Position>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </Position>
+  </PositionAttitudeTransform>
+  
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    Node2-->
+  <Node>
+    <Name>Node2</Name>
+    <File>mj_great_rhomb_cub_octahedron.3ds</File>
+  </Node>
+  <PositionAttitudeTransform>
+    <Name>Node2PAT</Name>
+    <Ref>
+      <RefName>Node2</RefName>
+      <EntityType>Node</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Position>
+      <x>10</x>
+      <y>30</y>
+      <z>20</z>
+    </Position>
+  </PositionAttitudeTransform>
+  
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    Node3-->
+  <Node>
+    <Name>Node3</Name>
+    <File>great_rhomb_icosi_dodeahedron.3ds</File>
+  </Node>
+  <PositionAttitudeTransform>
+    <Name>Node3PAT</Name>
+    <Ref>
+      <RefName>Node3</RefName>
+      <EntityType>Node</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Position>
+      <x>0</x>
+      <y>-20</y>
+      <z>10</z>
+    </Position>
+  </PositionAttitudeTransform>
+  
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    Node4-->
+  <Node>
+    <Name>Node4</Name>
+    <File>mj_dodecahedron_stellation_2.3ds</File>
+  </Node>
+  <PositionAttitudeTransform>
+    <Name>Node4PAT</Name>
+    <Ref>
+      <RefName>Node4</RefName>
+      <EntityType>Node</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Position>
+      <x>-20</x>
+      <y>0</y>
+      <z>-10</z>
+    </Position>
+  </PositionAttitudeTransform>
+  
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    Node5-->
+  <Node>
+    <Name>Node5</Name>
+    <File>mj_dodecahedron_stellation_3.3ds</File>
+  </Node>
+  <PositionAttitudeTransform>
+    <Name>Node5PAT</Name>
+    <Ref>
+      <RefName>Node5</RefName>
+      <EntityType>Node</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Position>
+      <x>20</x>
+      <y>0</y>
+      <z>-10</z>
+    </Position>
+  </PositionAttitudeTransform>
+  
+</Environment>

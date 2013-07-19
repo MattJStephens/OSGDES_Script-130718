@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    Node_Product1--><!--
+  <Node>
+    <Name>Node_Product1</Name>
+    <File>mj_dodecahedron.3DS</File>
+  </Node>-->
+  
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    Node1-->
+  <Node>
+    <Name>Node1</Name>
+    <File>pentakisdodecahedron.3DS</File>
+    <!--<File>dodecahedron_stellation1.3DS</File>-->
+
+  </Node>
+  
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    MultiplePAT-->
+  <MultiplePAT>
+    <Type>Cyto</Type>
+    <Name>MPAT_001</Name>
+    <PositionAttitudeTransform>
+      <Name>Cyto</Name>
+      <Ref>
+        <RefName>Node1</RefName>
+        <EntityType>Node</EntityType>
+        <RefType>AddChild</RefType>
+      </Ref>
+      <Position>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </Position>
+      <Scale>
+        <x>8</x>
+        <y>8</y>
+        <z>8</z>
+      </Scale>
+    </PositionAttitudeTransform>
+  </MultiplePAT>
+  
+</Environment>

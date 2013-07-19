@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- Created with XMLFox -->
+<DrawArrays>
+  <Name>$DrawArrays</Name>
+  <PrimitiveSet>LINE_STRIP</PrimitiveSet>
+  <SetFirst>0</SetFirst>
+  <SetCount>6</SetCount>
+</DrawArrays>

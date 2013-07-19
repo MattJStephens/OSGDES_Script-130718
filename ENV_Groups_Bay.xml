@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+ 
+  <!-- ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ set active indicies--> 
+  <ActiveGroupIndex>0</ActiveGroupIndex>
+  <!-- ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ Root Group--> 
+  <Group>
+    <Name>RootGroup</Name>
+    <Ref>
+      <RefName>Scene</RefName>
+      <EntityType>Group</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+   </Group>
+  <!--★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ Scene Group-->      
+  <Group>
+    <Name>Scene</Name>    
+    <Ref>
+      <RefName>ClearNode1</RefName>
+      <EntityType>ClearNode</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <!--★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ Lights-->
+    <Ref>
+      <RefName>LS1PAT</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>LS2PAT</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>LS3PAT</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <!--★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ axis-->
+    <Ref>
+      <RefName>PAT_AxisBay</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <!--★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ Sky dome-->
+    <Ref>
+      <RefName>PAT_BaySky</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <!--★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ sea plane-->
+    <Ref>
+      <RefName>PAT_port_sea</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <!--★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ sea plane-->
+    <Ref>
+      <RefName>PAT_port_land</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <!--★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ Billboard_QUAD1-->
+    <!--<Ref>
+      <RefName>Billboard_QUAD1</RefName>
+      <EntityType>Billboard</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>-->
+    <Ref>
+      <RefName>MRE1</RefName>
+      <EntityType>MultipleRandomEntities</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    
+    <Ref>
+      <RefName>HUDProjectionMatrix</RefName>
+      <EntityType>Projection</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>   
+  </Group>
+
+  <!-- ⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙ Background color-->
+  <ClearNode>
+    <Name>ClearNode1</Name>
+    <ClearColor>
+      <x>0.1</x>
+      <y>0.1</y>
+      <z>0.1</z>
+      <w>1</w>
+    </ClearColor>
+  </ClearNode>    
+</Environment>

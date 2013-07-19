@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+  <!--♛♛♛♛♛♛♛♛♛♛♛♛♛♛♛♛♛♛♛♛♛♛♛♛♛♛♛♛♛♛♛♛♛ media folders -->
+  <FilePath>I:\OSG_DES\3ds\</FilePath>
+  <FilePath>C:\WINDOWS\Fonts\</FilePath>
+  <FilePath>C:\mjs\OSG_DES_media\</FilePath>
+  <FilePath>C:\mjs\OSG_DES_media\textures\</FilePath>
+  <FilePath>C:\mjs\OSG_DES_media\3ds\</FilePath>
+</Environment>

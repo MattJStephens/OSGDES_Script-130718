@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+  
+  <!--✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵   PhysX_Actor-->
+  <PhysX_Actor>
+    <Name>PhysX_Actor1</Name>
+    <UserData>void_ptr</UserData>
+    <PhysX_ActorDesc>
+      <Shape>Box</Shape>
+      <Density>10</Density>
+      <NxGlobalPose>
+        <t>
+          <x>15</x>
+          <y>15</y>
+          <z>15</z>
+        </t>
+      </NxGlobalPose>      
+      <NxBodyDesc>
+        <AngularDamping>0</AngularDamping>
+      </NxBodyDesc>
+      <NxBoxShapeDesc>
+        <Dimensions>
+          <x>1.5</x>
+          <y>1.5</y>
+          <z>1.5</z>
+        </Dimensions>
+      </NxBoxShapeDesc>    
+    </PhysX_ActorDesc>   
+    <ApplyShaderColor>false</ApplyShaderColor> 
+  </PhysX_Actor>
+
+</Environment>

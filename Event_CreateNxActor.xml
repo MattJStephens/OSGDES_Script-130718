@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Event>
+  <Name>Sequencer1</Name>
+  <Type>Sequencer</Type>
+  <Subordination>Simultaneous</Subordination>
+  <Event>
+    <Name>UpdateViewer1</Name>
+    <Type>UpdateViewer</Type>
+    <ViewerUpdateType>UpdateCamera</ViewerUpdateType>
+    <CameraUpdateType>SetViewMatrix</CameraUpdateType>
+  </Event>
+  <!--★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ CreatePhysXActor -->
+  <Event>
+    <Name>CreatePhysXActor1</Name>
+    <Type>CreatePhysXActor</Type>
+
+    <Variable>
+      <Identifier>PhysX_actor</Identifier>
+      <Value>PhysX_Actor1</Value>
+      <DataType>String</DataType>
+    </Variable>
+    
+    <Variable>
+      <Identifier>Group</Identifier>
+      <Value>Scene</Value>
+      <DataType>String</DataType>
+    </Variable>
+    
+  </Event>
+  <!--★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ AlterText -->
+  <Event>
+    <Name>AlterText1</Name>
+    <Type>AlterText</Type>
+    <AlterString>Camera</AlterString>
+    <RefName>T1</RefName>
+    <Ref>
+      <RefName>Camera1</RefName>
+      <EntityType>Camera</EntityType>
+    </Ref>
+  </Event>
+  
+</Event>

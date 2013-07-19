@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--mjs-->
+<Event>
+  <Name>$Name</Name>
+  <Type>Sequencer</Type>
+  <Subordination>Simulataneous</Subordination>
+  <Event>
+    <Name>$Name</Name>
+    <Type>AlterPosition</Type>
+    <Inception>Spontaneous</Inception>
+    <Occurance>Interpolate</Occurance>
+    <Recurrance>Singular</Recurrance>
+    <Variable>
+      <Identifier>PAT</Identifier>
+      <Value>PositionAttitudeTransform2</Value>
+    </Variable>
+    <Variable>
+      <Identifier>Ax</Identifier>
+      <Value>0</Value>
+    </Variable>
+    <Variable>
+      <Identifier>Ay</Identifier>
+      <Value>0</Value>
+    </Variable>
+    <Variable>
+      <Identifier>Az</Identifier>
+      <Value>-1.7</Value>
+    </Variable>
+    <Variable>
+      <Identifier>Bx</Identifier>
+      <Value>0</Value>
+    </Variable>
+    <Variable>
+      <Identifier>By</Identifier>
+      <Value>4</Value>
+    </Variable>
+    <Variable>
+      <Identifier>Bz</Identifier>
+      <Value>2.7</Value>
+    </Variable>
+    <Variable>
+      <Identifier>Period</Identifier>
+      <Value>5</Value>
+    </Variable>   
+  </Event>
+</Event>

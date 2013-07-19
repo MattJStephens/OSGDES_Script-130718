@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- Created with XMLFox -->
+<AnimationPath>
+  <Name>$AnimationPath</Name>
+  <SetLoopMode>NO_LOOPING</SetLoopMode>
+  <Ref>
+    <RefName>$ACP</RefName>
+    <EntityType>AnimationControlPoint</EntityType>
+    <RefType>Insert</RefType>
+  </Ref>  
+</AnimationPath>

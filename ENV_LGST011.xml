@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+
+  <!--<WriteNodeThroughputToFile>TRUE</WriteNodeThroughputToFile>-->
+  <WriteEnvStateToFile>TRUE</WriteEnvStateToFile>
+
+  <Render>TRUE</Render>
+  <!--<QuitOnMaxTime>TRUE</QuitOnMaxTime>
+  <MaxTime>3</MaxTime>-->
+
+  <!--✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇ -Logistics_nodes-->
+  <Logistics_node>
+    <Name>LGN_A</Name>
+    <PATRef>
+      <RefName>PAT_A</RefName>
+      <EntityType>PAT</EntityType>
+    </PATRef>
+  </Logistics_node>
+
+  <Logistics_node>
+    <Name>LGN_B</Name>
+    <PATRef>
+      <RefName>PAT_B</RefName>
+      <EntityType>PAT</EntityType>
+    </PATRef>
+  </Logistics_node>
+
+  <Logistics_node>
+    <Name>LGN_C</Name>
+    <PATRef>
+      <RefName>PAT_C</RefName>
+      <EntityType>PAT</EntityType>
+    </PATRef>
+  </Logistics_node>
+
+  <Logistics_node>
+    <Name>LGN_D</Name>
+    <PATRef>
+      <RefName>PAT_D</RefName>
+      <EntityType>PAT</EntityType>
+    </PATRef>
+  </Logistics_node>
+
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Logistics_components-->
+  <Logistics_component>
+    <Name>COM_1</Name>
+    <NodeRef>
+      <RefName>OSG_1</RefName>
+      <EntityType>Node</EntityType>
+    </NodeRef>
+    <Mass>3</Mass>
+  </Logistics_component>
+
+  <Logistics_component>
+    <Name>COM_2</Name>
+    <NodeRef>
+      <RefName>OSG_2</RefName>
+      <EntityType>Node</EntityType>
+    </NodeRef>
+    <Mass>4</Mass>
+  </Logistics_component>
+
+  
+  <Logistics_component>
+    <Name>COM_3</Name>
+    <NodeRef>
+      <RefName>OSG_3</RefName>
+      <EntityType>Node</EntityType>
+    </NodeRef>    
+    <SubComponentRef>
+      <RefName>COM_1</RefName>
+      <EntityType>Logistics_component</EntityType>
+    </SubComponentRef>
+    <SubComponentRef>
+      <RefName>COM_2</RefName>
+      <EntityType>Logistics_component</EntityType>
+    </SubComponentRef>
+    <Mass>7</Mass>
+  </Logistics_component>
+  
+  
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Logistics_producer1-->
+  <Logistics_producer>
+    <Name>PRD_A1</Name>    
+    <ProductionType>Periodic</ProductionType>
+    <PeriodTotal>1.6666</PeriodTotal>    
+    <ComponentRef>
+      <RefName>COM_1</RefName>
+    </ComponentRef>
+    <NodeRef>
+      <RefName>LGN_A</RefName>
+    </NodeRef>
+    <TotalMass>60</TotalMass>
+    <InfiniteSupply>FALSE</InfiniteSupply>
+  </Logistics_producer>
+  
+  <Logistics_producer>
+    <Name>PRD_C1</Name>
+    <ProductionType>Periodic</ProductionType>
+    <PeriodTotal>1</PeriodTotal>
+    <ComponentRef>
+      <RefName>COM_2</RefName>
+    </ComponentRef>
+    <NodeRef>
+      <RefName>LGN_C</RefName>
+    </NodeRef>
+    <TotalMass>80</TotalMass>
+    <InfiniteSupply>FALSE</InfiniteSupply>
+  </Logistics_producer>
+ 
+  <Logistics_producer>
+    <Name>PRD_B1</Name>
+    <ProductionType>Synthesis</ProductionType>
+    <SynthesisTime>4</SynthesisTime>
+    <ComponentRef>
+      <RefName>COM_3</RefName>
+    </ComponentRef>
+    <NodeRef>
+      <RefName>LGN_B</RefName>
+    </NodeRef>
+    <!--<TotalMass>80</TotalMass>-->
+    <InfiniteSupply>TRUE</InfiniteSupply>
+  </Logistics_producer>
+  
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Logistics_demand1-->
+  <Logistics_demand>
+    <Name>DEM_B1</Name>        
+    <Type>Periodic</Type>
+    <DemandType>Periodic</DemandType>
+    <Period>2.5</Period>    
+    <!--<OrderType>Continuous</OrderType>-->
+    <OrderType>DES</OrderType>
+    <SetActiveTimeType>Simulation</SetActiveTimeType>
+    <ComponentRef>
+      <RefName>COM_1</RefName>
+    </ComponentRef>
+    <NodeRef>
+      <RefName>LGN_B</RefName>
+    </NodeRef>
+    <SourceNodeRef>
+      <RefName>LGN_A</RefName>
+    </SourceNodeRef>
+    <Logistics_operativeState>transit_store_at_destination</Logistics_operativeState>   
+  </Logistics_demand>
+ 
+  <Logistics_demand>
+    <Name>DEM_B2</Name>
+    <Type>Periodic</Type>
+    <DemandType>Periodic</DemandType>
+    <Period>1.5</Period>
+    <!--<OrderType>Continuous</OrderType>-->
+    <OrderType>DES</OrderType>
+    <SetActiveTimeType>Simulation</SetActiveTimeType>
+    <ComponentRef>
+      <RefName>COM_2</RefName>
+    </ComponentRef>
+    <NodeRef>
+      <RefName>LGN_B</RefName>
+    </NodeRef>
+    <SourceNodeRef>
+      <RefName>LGN_C</RefName>
+    </SourceNodeRef>
+    <Logistics_operativeState>transit_store_at_destination</Logistics_operativeState>  
+  </Logistics_demand>
+
+ <Logistics_demand>
+    <Name>DEM_D1</Name>
+    <Type>Periodic</Type>
+    <DemandType>Periodic</DemandType>
+    <Period>10</Period>
+    <OrderType>Continuous</OrderType>
+   <!--<OrderType>DES</OrderType>
+   <SetActiveTimeType>Simulation</SetActiveTimeType>-->
+    <ComponentRef>
+      <RefName>COM_3</RefName>
+    </ComponentRef>
+    <NodeRef>
+      <RefName>LGN_D</RefName>
+    </NodeRef>
+    <SourceNodeRef>
+      <RefName>LGN_B</RefName>
+    </SourceNodeRef>
+    <Logistics_operativeState>transit_store_at_destination</Logistics_operativeState>
+  </Logistics_demand>
+  
+  
+</Environment>

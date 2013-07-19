@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Event>
+  <Name>Sequencer1</Name>
+  <Type>Sequencer</Type>
+  <Subordination>Simultaneous</Subordination>
+  <Event>
+    <Type>Socket</Type>
+    <Variable>
+      <Identifier>Type</Identifier>
+      <Value>ServerEchoString</Value>
+    </Variable>
+    <Variable>
+      <Identifier>Socket</Identifier>
+      <Value>Socket001</Value>
+    </Variable>
+  </Event>
+  <Event>
+    <Name>AlterText1</Name>
+    <Type>AlterText</Type>
+    <AlterString>Socket</AlterString>
+    <RefName>T1</RefName>
+    <Ref>
+      <RefName>Socket001</RefName>
+      <EntityType>Socket</EntityType>
+    </Ref>
+  </Event>
+</Event>

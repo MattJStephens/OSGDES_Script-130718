@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<Event>
+  <Name>$Name</Name>
+  <Type>CreateProcess</Type>
+  <Recurrance>Singular</Recurrance>
+  <Variable>
+    <Identifier>
+      CommandLine
+    </Identifier>
+    <DataType>
+      string
+    </DataType>
+    <Value>
+      C:\mjs\OSG_DES_source\Debug\OSG_DES_WindowsForms.exe
+    </Value>
+  </Variable>
+</Event>

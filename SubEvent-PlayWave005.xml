@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--mjs-->
+<Event>
+  <Name>SubPlayWave</Name>
+  <Type>PlayWav</Type>
+  <Inception>Spontaneous</Inception>
+  <Recurrance>Singular</Recurrance>
+  <Variable>
+    <Identifier>File</Identifier>
+    <Value>wave-fourier.wav</Value>
+  </Variable>
+  <Response_xml>SubEvent-CreateWave005.xml</Response_xml>
+  <Response_xml>SubEvent-PlayWave005.xml</Response_xml>
+</Event>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+  
+  <!--✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵   PhysX_Actor-->
+  <PhysX_Actor>
+    <Name>PhysX_Actor_Monolith</Name>
+    <UserData>void_ptr</UserData>
+    <PhysX_ActorDesc>
+      <Shape>Box</Shape>
+      <Density>10</Density>
+      <NxGlobalPose>
+        <t>
+          <x>0</x>
+          <y>0</y>
+          <z>0</z>
+        </t>
+      </NxGlobalPose>      
+      <NxBodyDesc>
+        <AngularDamping>0</AngularDamping>
+        <Flag>NX_BF_KINEMATIC</Flag>
+      </NxBodyDesc>
+      <NxBoxShapeDesc>
+        <Dimensions>
+          <x>1</x>
+          <y>9</y>
+          <z>4</z>
+        </Dimensions>
+      </NxBoxShapeDesc>    
+    </PhysX_ActorDesc>   
+    <ApplyShaderColor>false</ApplyShaderColor> 
+  </PhysX_Actor>
+
+</Environment>

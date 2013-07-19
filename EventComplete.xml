@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Process Description Script (OSG XML PDS)-->
+<!--✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠-->
+<Event>
+  <Type>Sequencer</Type>
+  <Subordination>Simultaneous</Subordination>
+  <!--★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ AlterText -->
+  <Event>
+    <Type>AlterText</Type>
+    <AlterString>ElapsedTime</AlterString>
+    <RefName>T1</RefName>
+  </Event>
+  <Event>
+    <Type>AlterText</Type>
+    <AlterString>ElapsedSimulationTime</AlterString>
+    <RefName>T2</RefName>
+  </Event>
+  <Event>
+    <Type>UpdatePositionParametricExpression</Type>
+    <TimeType>Real</TimeType>
+    <RefName>Sphere4PAT</RefName>
+    <Expression>10 * sin (  t  ) </Expression>
+    <Expression>10 * cos ( t ) </Expression>
+    <Expression>5 * sin ( 5 * t ) </Expression>
+  </Event>
+  <Event>
+    <Type>UpdatePositionParametricExpression</Type>
+    <TimeType>Real</TimeType>
+    <RefName>Sphere5PAT</RefName>
+    <Expression>10 * sin (  t + 3.14159 ) </Expression>
+    <Expression>10 * cos ( t + 3.14159 ) </Expression>
+    <Expression>1 * cos ( 10 * t ) </Expression>
+  </Event>
+  <Event>
+    <Type>Sequencer</Type>
+    <Subordination>PeriodicSimultaneous</Subordination>
+    <Period>1</Period>    
+    <Event>
+      <Type>UpdateSimulationTime</Type>
+      <SimulationTimeIncrement>10</SimulationTimeIncrement>
+    </Event>    
+    <Event>
+      <Name>Velocitor</Name>
+      <Type>UpdateVelocity</Type>
+      <TimeType>Simulation</TimeType>
+      <Velocity>
+        <x>0</x>
+        <y>0.1</y>
+        <z>0</z>
+      </Velocity>
+      <RefName>Sphere2PAT</RefName>
+      
+      <!--<ClimaxCondition>y == 10</ClimaxCondition>
+      <ClimaxVariable>y</ClimaxVariable>
+      <Recurrance>Singular</Recurrance>-->
+
+      <VariableAssociation>y=Ry</VariableAssociation>
+      <SelfDestruct>Climax</SelfDestruct>
+      <Response_xml>MoveSpherePosX.xml</Response_xml>
+    </Event>
+    <Event>
+      <Type>Sequencer</Type>
+      <Subordination>Sequential</Subordination>     
+      <!--✣✣✣✣✣✣✣✣✣✣✣✣✣✣✣✣✣✣✣✣✣✣✣✣✣✣✣✣✣✣✣✣ -AlterPosition-->
+      <Event>
+        <Type>AlterPosition</Type>
+        <RefName>Sphere1PAT</RefName>
+        <Position>
+          <x>0</x>
+          <y>0</y>
+          <z>10</z>
+        </Position>
+      </Event>    
+      <Event>
+        <Type>AlterPosition</Type>
+        <RefName>Sphere1PAT</RefName>
+        <SimulationTime>20</SimulationTime>
+        <Position>
+          <x>5</x>
+          <y>0</y>
+          <z>10</z>
+        </Position>
+      </Event>    
+      <Event>
+        <Type>AlterPosition</Type>
+        <RefName>Sphere1PAT</RefName>
+        <SimulationTime>30</SimulationTime>
+        <Position>
+          <x>10</x>
+          <y>0</y>
+          <z>10</z>
+        </Position>
+      </Event>
+      <Event>
+        <Type>AlterPosition</Type>
+        <RefName>Sphere1PAT</RefName>
+        <SimulationTime>30</SimulationTime>
+        <Position>
+          <x>15</x>
+          <y>0</y>
+          <z>10</z>
+        </Position>
+      </Event>     
+    </Event>   
+  </Event>
+</Event>

@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+ 
+  <!-- ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ set active indicies--> 
+  <ActiveGroupIndex>0</ActiveGroupIndex>
+  <!-- ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ Root Group--> 
+  <Group>
+    <Name>RootGroup</Name>
+    <Ref>
+      <RefName>Scene</RefName>
+      <EntityType>Group</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+   </Group>
+  <!--★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ Scene Group-->
+  <Group>
+    <Name>Scene</Name>
+    <Ref>
+      <RefName>ClearNode1</RefName>
+      <EntityType>ClearNode</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>LS1PAT</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+ 
+    <Ref>
+      <RefName>GeodeLine1PAT</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+   
+    <Ref>
+      <RefName>PhysX_Actor1</RefName>
+      <EntityType>PhysX_Actor</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>PhysX_Actor2</RefName>
+      <EntityType>PhysX_Actor</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>PhysX_Actor3</RefName>
+      <EntityType>PhysX_Actor</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>PhysX_Actor4</RefName>
+      <EntityType>PhysX_Actor</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>PhysX_Actor5</RefName>
+      <EntityType>PhysX_Actor</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>PhysXPlane1</RefName>
+      <EntityType>PhysXPlane</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>PhysXCloth0</RefName>
+      <EntityType>PhysXCloth</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>PhysXCloth1</RefName>
+      <EntityType>PhysXCloth</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>PhysXCloth2</RefName>
+      <EntityType>PhysXCloth</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>PhysXCloth3</RefName>
+      <EntityType>PhysXCloth</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>PhysXCloth4</RefName>
+      <EntityType>PhysXCloth</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>PhysXCloth5</RefName>
+      <EntityType>PhysXCloth</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <!--<Ref>
+      <RefName>PhysXCube1</RefName>
+      <EntityType>PhysXCube</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>PhysXCube2</RefName>
+      <EntityType>PhysXCube</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>PhysXCube3</RefName>
+      <EntityType>PhysXCube</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>-->
+
+    <Ref>
+      <RefName>FilePath1PAT</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+
+    <Ref>
+      <RefName>HUDProjectionMatrix</RefName>
+      <EntityType>Projection</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+  </Group>
+
+  <!-- ⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙ Background color-->
+  <ClearNode>
+    <Name>ClearNode1</Name>
+    <ClearColor>
+      <x>0.1</x>
+      <y>0.3</y>
+      <z>0.8</z>
+      <w>1</w>
+    </ClearColor>
+  </ClearNode>    
+</Environment>

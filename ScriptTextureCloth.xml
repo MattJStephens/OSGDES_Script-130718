@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Script> 
+  <EnvironmentFileName>ENV_FilePaths.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_GroupsTextureCloth.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Materials.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_LightsTextureCloth.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_CustomViewerTextureCloth.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_LinesAxis.xml</EnvironmentFileName>
+ 
+  <EnvironmentFileName>ENV_TextureCloth.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_PHYSX_Actor.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_PHYSX_Actor2.xml</EnvironmentFileName>
+  <!--<EnvironmentFileName>ENV_PHYSX_static_cube.xml</EnvironmentFileName>-->
+  <!--<EnvironmentFileName>ENV_PHYSX_BF_KINEMATIC_cube.xml</EnvironmentFileName>-->
+
+  <EnvironmentFileName>ENV_Text.xml</EnvironmentFileName>
+
+ <!--<EventFileName>Event_CustomViewerScreenGrab.xml</EventFileName>-->
+  <EventFileName>Event_CreatePhysXActor.xml</EventFileName>
+</Script>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Event>
+  <Name>Sequencer1</Name>
+  <Type>Sequencer</Type>
+  <Subordination>Simultaneous</Subordination>
+
+  <Event>
+    <Name>Python</Name>
+    <Type>Python</Type>
+    <Recurrance>Singular</Recurrance>
+    <Variable>
+      <Identifier>Object</Identifier>
+      <!--<Value>SMTP</Value>-->
+      <Value>python004</Value>
+    </Variable>
+    <Variable>
+      <Identifier>Key</Identifier>
+      <!--<Value>SMTP</Value>-->
+      <Value>ex1</Value>
+    </Variable>
+  </Event>
+
+  
+</Event>

@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Line-->
+  <Vec3Array>
+    <Name>Vec3ArrayMonolith</Name>
+    
+    <Vec3d>
+      <x>-1</x>
+      <y>-4</y>
+      <z>-9</z>
+    </Vec3d>
+    <Vec3d>
+      <x>-1</x>
+      <y>4</y>
+      <z>-9</z>
+    </Vec3d>
+    
+    <Vec3d>
+      <x>-1</x>
+      <y>4</y>
+      <z>-9</z>
+      </Vec3d>
+    <Vec3d>
+      <x>1</x>
+      <y>4</y>
+      <z>-9</z>
+    </Vec3d>
+    <!--4-->
+    <Vec3d>
+      <x>1</x>
+      <y>4</y>
+      <z>-9</z>
+    </Vec3d>
+    <Vec3d>
+      <x>1</x>
+      <y>-4</y>
+      <z>-9</z>
+    </Vec3d>
+    
+    <Vec3d>
+      <x>1</x>
+      <y>-4</y>
+      <z>-9</z>
+    </Vec3d>
+    <Vec3d>
+      <x>-1</x>
+      <y>-4</y>
+      <z>-9</z>
+    </Vec3d>
+    <!--8-->
+    <Vec3d>
+      <x>-1</x>
+      <y>-4</y>
+      <z>9</z>
+    </Vec3d>
+    <Vec3d>
+      <x>-1</x>
+      <y>4</y>
+      <z>9</z>
+    </Vec3d>
+
+    <Vec3d>
+      <x>-1</x>
+      <y>4</y>
+      <z>9</z>
+    </Vec3d>
+    <Vec3d>
+      <x>1</x>
+      <y>4</y>
+      <z>9</z>
+    </Vec3d>
+    <!--12-->
+    <Vec3d>
+      <x>1</x>
+      <y>4</y>
+      <z>9</z>
+    </Vec3d>
+    <Vec3d>
+      <x>1</x>
+      <y>-4</y>
+      <z>9</z>
+    </Vec3d>
+
+    <Vec3d>
+      <x>1</x>
+      <y>-4</y>
+      <z>9</z>
+    </Vec3d>
+    <Vec3d>
+      <x>-1</x>
+      <y>-4</y>
+      <z>9</z>
+    </Vec3d>
+    <!--16-->
+
+
+    <Vec3d>
+      <x>-1</x>
+      <y>-4</y>
+      <z>-9</z>
+    </Vec3d>
+    <Vec3d>
+      <x>-1</x>
+      <y>-4</y>
+      <z>9</z>
+    </Vec3d>
+
+    <Vec3d>
+      <x>-1</x>
+      <y>4</y>
+      <z>-9</z>
+    </Vec3d>
+    <Vec3d>
+      <x>-1</x>
+      <y>4</y>
+      <z>9</z>
+    </Vec3d>
+    <!--20-->
+    <Vec3d>
+      <x>1</x>
+      <y>4</y>
+      <z>9</z>
+    </Vec3d>
+    <Vec3d>
+      <x>1</x>
+      <y>4</y>
+      <z>-9</z>
+    </Vec3d>
+
+    <Vec3d>
+      <x>1</x>
+      <y>-4</y>
+      <z>-9</z>
+    </Vec3d>
+    <Vec3d>
+      <x>1</x>
+      <y>-4</y>
+      <z>9</z>
+    </Vec3d>
+    
+  </Vec3Array>
+  <DrawArrays>
+    <Name>DrawArraysMonolith</Name>
+    <PrimitiveSet>LINES</PrimitiveSet>
+    <SetFirst>0</SetFirst>
+    <SetCount>24</SetCount>
+  </DrawArrays>
+  <Geometry>
+    <Name>GeometryMonolith</Name>
+    <Ref>
+      <RefName>DrawArraysMonolith</RefName>
+      <EntityType>DrawArrays</EntityType>
+      <RefType>AddPrimitiveSet</RefType>
+    </Ref>    
+    <Ref>
+      <RefName>Vec3ArrayMonolith</RefName>
+      <EntityType>Vec3Array</EntityType>
+      <RefType>SetVertexArray</RefType>
+    </Ref>   
+  </Geometry>
+  <Geode>
+    <Name>GeodeLineMonolith</Name>   
+    <Ref>
+      <RefName>GeometryMonolith</RefName>
+      <EntityType>Geometry</EntityType>
+      <RefType>AddDrawable</RefType>
+    </Ref>
+    <Ref>
+      <RefName>WhiteEmissive</RefName>
+      <EntityType>Material</EntityType>
+      <RefType>SetAttribute</RefType>
+    </Ref>
+  </Geode>
+  <PositionAttitudeTransform>
+    <Name>PATMonolith</Name>
+    <Position>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </Position>
+    <Ref>
+      <RefName>GeodeLineMonolith</RefName>
+      <EntityType>Geode</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+  </PositionAttitudeTransform>
+ 
+  
+</Environment>

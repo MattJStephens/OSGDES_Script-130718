@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<Script>
+  <EnvironmentFileName>Environment_DELogistician.xml</EnvironmentFileName>
+  <EventFileName>Event_DELogisitician.xml</EventFileName>
+</Script>

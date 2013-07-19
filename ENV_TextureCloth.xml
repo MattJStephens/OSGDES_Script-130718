@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+ 
+    <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    Image-->
+  <Image>
+    <Name>ScreenGrab</Name>
+    <!--<FileName>ScreenGrab.jpg</FileName>-->
+  </Image>
+  
+  <!--✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵   PhysX-->
+  <PhysXPlane>
+    <Name>PhysXPlane1</Name>
+    <Origin>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </Origin>
+    <PlaneSize>100</PlaneSize>
+    <ImageFileName>cream3_256.bmp</ImageFileName>
+  </PhysXPlane>
+
+  <PhysXCloth>
+    <Name>PhysXCloth0</Name>
+    <Origin>
+      <x>-1</x>
+      <y>-5</y>
+      <z>12</z>
+    </Origin>
+    <!--<PrimitiveSetType>Faces</PrimitiveSetType>-->
+    <PrimitiveSetType>Points</PrimitiveSetType>
+    <h>10</h>
+    <w>2</w>
+    <d>0.2</d>
+    <Thickness>0.2</Thickness>
+    <BendingStiffness>0.9</BendingStiffness>
+    <StretchingStiffness>0.9</StretchingStiffness>
+    <Density>1</Density>
+    <Friction>0.5</Friction>
+    <DampingCoefficient>0.5</DampingCoefficient>
+    <SolverIterations>5</SolverIterations>
+    <Tear>1</Tear>
+    <!--<Texture>I:\bmp\800px-Ruby_laser.bmp</Texture>-->
+  </PhysXCloth>
+
+
+  <PhysXCloth>
+    <Name>PhysXCloth1</Name>
+    <Origin>
+      <x>-3</x>
+      <y>-5</y>
+      <z>12</z>
+    </Origin>
+    <PrimitiveSetType>Faces</PrimitiveSetType>
+    <h>10</h>
+    <w>2</w>
+    <d>0.2</d>
+    <Thickness>0.2</Thickness>
+    <BendingStiffness>0.9</BendingStiffness>
+    <StretchingStiffness>0.9</StretchingStiffness>
+    <Density>1</Density>
+    <Friction>0.5</Friction>
+    <DampingCoefficient>0.5</DampingCoefficient>
+    <SolverIterations>5</SolverIterations>
+    <Tear>1</Tear>
+    <!--<Texture>I:\bmp\800px-Ruby_laser.bmp</Texture>-->
+  </PhysXCloth>
+
+  <PhysXCloth>
+    <Name>PhysXCloth2</Name>
+    <Origin>
+      <x>-5</x>
+      <y>-5</y>
+      <z>12</z>
+    </Origin>
+    <PrimitiveSetType>Faces</PrimitiveSetType>
+    <h>10</h>
+    <w>2</w>
+    <d>0.2</d>
+    <Thickness>0.2</Thickness>
+    <BendingStiffness>0.9</BendingStiffness>
+    <StretchingStiffness>0.9</StretchingStiffness>
+    <Density>1</Density>
+    <Friction>0.5</Friction>
+    <DampingCoefficient>0.9</DampingCoefficient>
+    <SolverIterations>5</SolverIterations>
+    <Tear>1</Tear>
+    <!--<Texture>I:\bmp\800px-Ruby_laser.bmp</Texture>-->
+  </PhysXCloth>
+
+  <PhysXCloth>
+    <Name>PhysXCloth3</Name>
+    <Origin>
+      <x>-7</x>
+      <y>-5</y>
+      <z>12</z>
+    </Origin>
+    <PrimitiveSetType>Faces</PrimitiveSetType>
+    <h>10</h>
+    <w>2</w>
+    <d>0.2</d>
+    <Thickness>0.2</Thickness>
+    <BendingStiffness>0.9</BendingStiffness>
+    <StretchingStiffness>0.9</StretchingStiffness>
+    <Density>1</Density>
+    <Friction>0.5</Friction>
+    <DampingCoefficient>0.5</DampingCoefficient>
+    <SolverIterations>5</SolverIterations>
+    <Tear>1</Tear>
+    <!--<Texture>I:\bmp\800px-Ruby_laser.bmp</Texture>-->
+  </PhysXCloth>
+
+  <PhysXCloth>
+    <Name>PhysXCloth4</Name>
+
+    <Origin>
+      <x>-9</x>
+      <y>-5</y>
+      <z>12</z>
+    </Origin>
+    <PrimitiveSetType>Faces</PrimitiveSetType>
+    <h>10</h>
+    <w>2</w>
+    <d>0.2</d>
+    <Thickness>0.2</Thickness>
+    <BendingStiffness>0.9</BendingStiffness>
+    <StretchingStiffness>0.9</StretchingStiffness>
+    <Density>1</Density>
+    <Friction>0.5</Friction>
+    <DampingCoefficient>0.5</DampingCoefficient>
+    <SolverIterations>5</SolverIterations>
+    <Tear>1</Tear>
+    <!--<Texture>I:\bmp\800px-Ruby_laser.bmp</Texture>-->
+  </PhysXCloth>
+
+  <PhysXCloth>
+    <Name>PhysXCloth5</Name>
+
+    <Origin>
+      <x>-11</x>
+      <y>-5</y>
+      <z>12</z>
+    </Origin>
+    <PrimitiveSetType>Faces</PrimitiveSetType>
+    <h>10</h>
+    <w>2</w>
+    <d>0.2</d>
+    <Thickness>0.2</Thickness>
+    <BendingStiffness>0.9</BendingStiffness>
+    <StretchingStiffness>0.9</StretchingStiffness>
+    <Density>1</Density>
+    <Friction>0.5</Friction>
+    <DampingCoefficient>0.5</DampingCoefficient>
+    <SolverIterations>5</SolverIterations>
+    <Tear>1</Tear>
+    <!--<Texture>I:\bmp\800px-Ruby_laser.bmp</Texture>-->
+  </PhysXCloth>
+  
+  
+</Environment>

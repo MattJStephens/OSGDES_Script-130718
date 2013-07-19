@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!--mjs-->
+<Event>
+  <Name>$Name</Name>
+  <Type>Sequencer</Type>
+  <Subordination>Simulataneous</Subordination>
+  <Event>
+    <Name>$Name</Name>
+    <Type>CreateWave</Type>
+    <Inception>Spontaneous</Inception>
+    <Recurrance>Singular</Recurrance>
+    <Variable>
+      <Identifier>FileName</Identifier>
+      <Value>wave_add-cMaj.wav</Value>
+    </Variable>
+    <Variable>
+      <Identifier>Channels</Identifier>
+      <Value>1</Value>
+    </Variable>
+    <Variable>
+      <Identifier>SampleRate</Identifier>
+      <Value>44100</Value>
+    </Variable>
+    <Variable>
+      <Identifier>BitsPerSample</Identifier>
+      <Value>16</Value>
+    </Variable>
+    <Variable>
+      <Identifier>NumSamples</Identifier>
+      <Value>262144</Value>
+    </Variable>
+    <Variable>
+      <Identifier>Type</Identifier>
+      <Value>AddFrequencies</Value>
+    </Variable>
+   
+    <Variable>
+      <Identifier>Frequency</Identifier>
+      <Value>261.63</Value>
+    </Variable>
+    <Variable>
+      <Identifier>Frequency</Identifier>
+      <Value>329.63</Value>
+    </Variable>
+    <Variable>
+      <Identifier>Frequency</Identifier>
+      <Value>392.00</Value>
+    </Variable>
+  </Event>
+</Event>

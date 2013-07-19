@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Line-->
+  <Vec3Array>
+    <Name>Vec3Array_Cyto</Name>
+    <Cyto>TRUE</Cyto>   
+  </Vec3Array>
+  
+  <DrawArrays>
+    <Name>DrawArrays_Cyto</Name>
+    <PrimitiveSet>LINES</PrimitiveSet>
+    <SetFirst>0</SetFirst>
+    <SetCount>LAST</SetCount>
+  </DrawArrays>
+  
+  <Geometry>
+    <Name>Geometry_Cyto</Name>
+    <Ref>
+      <RefName>DrawArrays_Cyto</RefName>
+      <EntityType>DrawArrays</EntityType>
+      <RefType>AddPrimitiveSet</RefType>
+    </Ref>    
+    <Ref>
+      <RefName>Vec3Array_Cyto</RefName>
+      <EntityType>Vec3Array</EntityType>
+      <RefType>SetVertexArray</RefType>
+    </Ref>   
+  </Geometry>
+  
+  <Geode>
+    <Name>GeodeLine_Cyto</Name>   
+    <Ref>
+      <RefName>Geometry_Cyto</RefName>
+      <EntityType>Geometry</EntityType>
+      <RefType>AddDrawable</RefType>
+    </Ref>
+    <Ref>
+      <RefName>French_raspberry_Em</RefName>
+      <EntityType>Material</EntityType>
+      <RefType>SetAttribute</RefType>
+    </Ref>
+  </Geode>
+  
+  <PositionAttitudeTransform>
+    <Name>PAT_Lines_Cyto</Name>
+    <Position>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </Position>
+    <!--<Orientation>
+      <Axis>
+        <x>1</x>
+        <y>0</y>
+        <z>0</z>
+      </Axis>
+      <Angle>0</Angle>
+    </Orientation>-->
+    <Ref>
+      <RefName>GeodeLine_Cyto</RefName>
+      <EntityType>Geode</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+  </PositionAttitudeTransform>
+  
+</Environment>

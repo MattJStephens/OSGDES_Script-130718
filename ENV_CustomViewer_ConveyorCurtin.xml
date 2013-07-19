@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+  
+  <!--★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ Set active viewer index-->
+  <ActiveViewerIndex>0</ActiveViewerIndex>
+ 
+  <!--★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ Custom Camera-->
+  <CustomCamera>
+    <!--<VelocityCoefficient>5</VelocityCoefficient>-->
+    <VelocityCoefficient>20</VelocityCoefficient>
+    <!--<MouseCoefficient>0.001</MouseCoefficient>-->
+    <MouseCoefficient>0.001</MouseCoefficient>
+    <UpAxis>X</UpAxis>
+    <Position>
+      <x>0</x>
+      <y>50</y>
+      <z>-10</z>
+    </Position>
+  </CustomCamera>
+  
+  <!--★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ Enable Keyboard event handler-->
+  <!--★★★★★★★★★★★★★★★★★★★★  This updates the user interface variables during runtime-->
+  <KeyBoardEventHandler>enable</KeyBoardEventHandler>
+  
+  <!--★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ Viewer-->
+  <Viewer>
+    <Name>Viewer1</Name>
+    <!--<CameraManipulator>TrackballManipulator</CameraManipulator>-->
+    <!--<CameraManipulator>FlightManipulator</CameraManipulator>-->
+    <!--<CameraManipulator>DriveManipulator</CameraManipulator>-->
+    <!--<CameraManipulator>OrbitManipulator</CameraManipulator>-->
+    <!--<CameraManipulator>FirstPersonManipulator</CameraManipulator>-->
+    <!--<CameraManipulator>OrbitManipulator</CameraManipulator>-->
+    
+    <!--links a pointer in the viewer to the keyboard event handler-->
+    <Ref>
+      <RefName>KeyBoardEventHandler</RefName>
+      <EntityType>KeyBoardEventHandler</EntityType>
+      <RefType>AddEventHandler</RefType> 
+    </Ref>
+      
+    <SetUpViewInWindow>
+      <x>50</x>
+      <y>50</y>
+      <width>1024</width>
+      <height>768</height>
+    </SetUpViewInWindow>
+  </Viewer>  
+  
+</Environment>

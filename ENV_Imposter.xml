@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+ 
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢  FilePath Node-->
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Remember to add the Imposter as a child to a Group-->
+  
+  <Node>
+    <Name>Node_imposter</Name>
+    <File>HORNET_L.3DS</File>    
+  </Node> 
+ 
+  <Imposter>
+    <Name>Imposter1</Name>
+    <SetImposterThreshold>3000</SetImposterThreshold>
+    <SetImpostorThresholdToBound>5.0</SetImpostorThresholdToBound>
+    <SetCenter>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </SetCenter>
+    <SetRange>
+      <ChildNo>0</ChildNo>
+      <Min>0</Min>
+      <Max>40000</Max>
+    </SetRange>    
+    <Ref>
+      <RefName>Node_imposter</RefName>
+      <EntityType>Node</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+  </Imposter>
+  
+</Environment>

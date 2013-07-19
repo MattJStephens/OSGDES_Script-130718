@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+
+  <Smoke>
+    <Name>SmokeEffect1</Name>
+    <Position>
+      <x>1800</x>
+      <y>-590.551</y>
+      <z>236</z>
+    </Position>
+    <!--<SetParticleDuration>20</SetParticleDuration>-->
+    <Scale>300</Scale>
+    <intensity>0.5</intensity>
+  </Smoke>
+
+  <Smoke>
+    <Name>SmokeEffect2</Name>
+    <Position>
+      <x>1600</x>
+      <y>590.551</y>
+      <z>236</z>   
+    </Position>
+    <!--<SetParticleDuration>20</SetParticleDuration>-->
+    <Scale>300</Scale>
+    <intensity>0.5</intensity>
+  </Smoke>
+
+
+ 
+</Environment>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- Created with XMLFox -->
+ <PositionAttitudeTransform>
+    <Name>LS1XPAT</Name>
+    <Ref>
+      <RefName>LS1X</RefName>
+      <EntityType>LightSource</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Position>
+      <x>0</x>
+      <y>0</y>
+      <z>5</z>
+    </Position>
+    <Scale>
+      <x>0.1</x>
+      <y>0.1</y>
+      <z>0.1</z>
+    </Scale>
+  </PositionAttitudeTransform>

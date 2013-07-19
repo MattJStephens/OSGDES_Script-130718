@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!-- mjs environment 1-->
+<Geometry>
+  <FilePath>I:\media\architecture\smith_housez.3DS</FilePath>
+  <Optimizer>T</Optimizer>
+  <PositionAttitudeTransform>
+    <Name>1</Name>
+    <Position>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </Position>
+    <AttitudeQ>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+      <Angle>3.14159</Angle>
+    </AttitudeQ>   
+</PositionAttitudeTransform>
+  <PositionAttitudeTransform>
+    <Name>2</Name>
+    <Position>
+      <x>500</x>
+      <y>0</y>
+      <z>0</z>
+    </Position>
+    <Scale>
+      <x>1</x>
+      <y>2</y>
+      <z>1</z>
+    </Scale>
+    <AttitudeQ>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+      <Angle>0</Angle>
+    </AttitudeQ>
+  </PositionAttitudeTransform>
+</Geometry>

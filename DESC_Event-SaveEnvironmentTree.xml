@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<Event>
+  <Name>SaveEnvironmentTree</Name>
+  <Type>EventType_SaveEnvironmentTree</Type>
+  <FileName>Environment_RemoteServer1X.xml</FileName>
+  <Recurrance>Singular</Recurrance>
+</Event>

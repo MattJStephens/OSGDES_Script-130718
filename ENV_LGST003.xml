@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+
+  <!--<WriteNodeThroughputToFile>TRUE</WriteNodeThroughputToFile>-->
+  <WriteEnvStateToFile>TRUE</WriteEnvStateToFile>
+
+  <Render>TRUE</Render>
+  <!--<QuitOnMaxTime>TRUE</QuitOnMaxTime>
+  <MaxTime>3</MaxTime>-->
+
+  <!--✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇ -Logistics_nodes-->
+  <Logistics_node>
+    <Name>A</Name>
+    <PATRef>
+      <RefName>A</RefName>
+      <EntityType>PAT</EntityType>
+    </PATRef>
+  </Logistics_node>
+
+  <Logistics_node>
+    <Name>B</Name>
+    <PATRef>
+      <RefName>B</RefName>
+      <EntityType>PAT</EntityType>
+    </PATRef>
+  </Logistics_node>
+
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Logistics_components-->
+  <Logistics_component>
+    <Name>1</Name>
+    <NodeRef>
+      <RefName>1</RefName>
+      <EntityType>Node</EntityType>
+    </NodeRef>
+    <Mass>1</Mass>
+  </Logistics_component>
+
+
+  <EXPR>
+    <ID>EXPR_A</ID>
+    <EXPR_Variable>
+      <ID>t</ID>
+      <Type>time</Type>
+    </EXPR_Variable>
+    <EXPR_Variable>
+      <ID>B</ID>
+      <Value>0.1</Value>
+    </EXPR_Variable>
+    <EXPR_Operation>
+      <ID>F</ID>
+      <Operator>*</Operator>
+      <Operand>
+        <Type>Variable</Type>
+        <VarRef>t</VarRef>
+      </Operand>
+      <Operand>
+        <Type>Constant</Type>
+        <Constant>-0.2</Constant>
+      </Operand>
+    </EXPR_Operation>
+    <EXPR_Operation>
+      <ID>G</ID>
+      <Operator>^</Operator>
+      <Operand>
+        <Type>Constant</Type>
+        <Constant>2.718</Constant>
+      </Operand>
+      <Operand>
+        <Type>Operation</Type>
+        <OperationRef>F</OperationRef>
+      </Operand>
+    </EXPR_Operation>
+    <EXPR_Operation>
+      <ID>H</ID>
+      <Operator>*</Operator>
+      <Operand>
+        <Type>Constant</Type>
+        <Constant>5</Constant>
+      </Operand>      
+      <Operand>
+        <Type>Operation</Type>
+        <OperationRef>G</OperationRef>
+      </Operand>
+    </EXPR_Operation>
+  </EXPR>
+  
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Logistics_producer1-->
+  <Logistics_producer>
+    <Name>A</Name>   
+    <ProductionType>EXPR</ProductionType>
+    <ProductionRateMethod>EXPR</ProductionRateMethod>
+    <PROD_EXPR_REF>
+      <RefName>EXPR_A</RefName>
+    </PROD_EXPR_REF>    
+    <ComponentRef>
+      <RefName>1</RefName>
+    </ComponentRef>
+    <NodeRef>
+      <RefName>A</RefName>
+    </NodeRef>
+    <TotalMass>50</TotalMass>
+    <InfiniteSupply>FALSE</InfiniteSupply>
+  </Logistics_producer>
+
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Logistics_demand1-->
+  <Logistics_demand>
+    <Name>B</Name>    
+    
+    <Type>Periodic</Type>
+    <DemandType>Periodic</DemandType>
+    <Period>0.6</Period>
+    
+    <OrderType>Continuous</OrderType>
+    <!--<OrderType>DES</OrderType>
+    <SetActiveTimeType>Simulation</SetActiveTimeType>-->
+
+    <ComponentRef>
+      <RefName>1</RefName>
+    </ComponentRef>
+    <NodeRef>
+      <RefName>B</RefName>
+    </NodeRef>
+    <SourceNodeRef>
+      <RefName>A</RefName>
+    </SourceNodeRef>
+
+    <Logistics_operativeState>transit_store_at_destination</Logistics_operativeState>
+    <!--<Logistics_operativeState>transit_destroy_at_destination</Logistics_operativeState>-->
+  </Logistics_demand>
+
+</Environment>

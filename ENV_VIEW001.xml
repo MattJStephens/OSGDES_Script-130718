@@ -1,0 +1,12 @@
+<?xml version="1.0"?><!--mjs OpenSceneGraph Extensible Markup Language Process Description Script (OSG XML PDS)--><!--<CameraManipulator>TrackballManipulator</CameraManipulator>--><!--<CameraManipulator>FlightManipulator</CameraManipulator>--><!--<CameraManipulator>DriveManipulator</CameraManipulator>--><!--<CameraManipulator>OrbitManipulator</CameraManipulator>--><Environment>
+	<ActiveViewerIndex>0</ActiveViewerIndex>
+	<Viewer>
+	<Name>Viewer1</Name>
+	<CameraManipulator>OrbitManipulator</CameraManipulator>
+	<SetUpViewInWindow>
+	<x>50</x>
+	<y>50</y>
+	<width>1024</width>
+	<height>768</height></SetUpViewInWindow></Viewer>
+	<Image>
+	<Name>ScreenGrab</Name></Image></Environment>

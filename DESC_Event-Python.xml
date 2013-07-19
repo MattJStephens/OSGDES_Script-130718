@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<Event>
+  <Name>Python</Name>
+  <Type>Python</Type>
+  <Recurrance>Singular</Recurrance>
+  <Variable>
+    <Identifier>Object</Identifier>
+    <Value>python004</Value>
+  </Variable>
+  <Variable>
+    <Identifier>Key</Identifier>
+    <Value>ex1</Value>
+  </Variable>
+</Event>

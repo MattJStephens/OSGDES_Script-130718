@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<Consequence>
+  <Type>
+    <Name>None</Name>
+  </Type>
+  <Type>
+    <Name>create_entity</Name>
+  </Type>
+  <Type>
+    <Name>create_event</Name>
+  </Type>
+  <Type>
+    <Name>create_process</Name>
+  </Type>
+  <Type>
+    <Name>delete_entity</Name>
+  </Type>
+  <Type>
+    <Name>delete_event</Name>
+  </Type>
+  <Type>
+    <Name>delete_process</Name>
+  </Type>
+</Consequence>
+
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- Created with XMLFox -->
+<PhysXCube>
+  <Name>PhysXCube1</Name>
+  <FileName>cube.3ds</FileName>
+  <Position>
+    <x>0</x>
+    <y>-3</y>
+    <z>5</z>
+  </Position>
+  <Size>
+    <x>1</x>
+    <y>2</y>
+    <z>2</z>
+  </Size>
+</PhysXCube>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Text>
+  <Name>T1</Name>
+  <CharacterSize>25</CharacterSize>
+  <Font>impact.ttf</Font>
+  <InitText>t1</InitText>
+  <AxisAlignment>SCREEN</AxisAlignment>
+  <Position>
+    <x>10</x>
+    <y>10</y>
+    <z>-1.5</z>
+  </Position>
+  <Color>
+    <x>199</x>
+    <y>77</y>
+    <z>15</z>
+    <w>1</w>
+  </Color>
+</Text>

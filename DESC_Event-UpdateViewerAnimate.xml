@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Event>
+  <Name>$Name</Name>
+  <Type>UpdateViewerAnimate</Type>
+  <ViewerUpdateType>UpdateCamera</ViewerUpdateType>
+  <CameraUpdateType>SetViewMatrix</CameraUpdateType>
+  <Variable>
+    <Identifier>AnimationPath</Identifier>
+    <Value>AnimationPath1</Value>
+    <DataType>String</DataType>
+  </Variable>
+</Event>

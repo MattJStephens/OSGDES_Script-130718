@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Geode>
+  <Name>$Geode</Name>
+  <Ref>
+    <RefName>$Text</RefName>
+    <EntityType>Text</EntityType>
+    <RefType>AddDrawable</RefType>
+  </Ref>
+</Geode>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- Created with XMLFox -->
+ <LightSource>
+    <Name>$LightSource</Name>    
+    <SetLocalStateSetModes>ON</SetLocalStateSetModes>  
+    <Ref>
+      <RefName>$Light</RefName>
+      <EntityType>Light</EntityType>
+      <RefType>SetLight</RefType>
+    </Ref>
+    <Ref>
+      <RefName>RootGroup</RefName>
+      <EntityType>Group</EntityType>
+      <RefType>SetStateSetModesOn</RefType>
+    </Ref>
+  </LightSource>

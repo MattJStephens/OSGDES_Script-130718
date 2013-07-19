@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!--mjs-->
+<Event>
+  <Name>$Name</Name>
+  <Type>Sequencer</Type>
+  <Subordination>Simulataneous</Subordination>
+  <Event>
+    <Name>$Name</Name>
+    <Type>Math</Type>
+    
+    <Variable>
+      <Identifier>Process</Identifier>
+      <Value>Differentiate</Value>
+    </Variable>
+    <Variable>
+      <Identifier>WithRespectTo</Identifier>
+      <Value>x</Value>
+    </Variable>
+    
+    <EXPR>      
+      <ID>Fx</ID>    
+     
+      <EXPR_Variable>
+        <ID>x</ID>
+      </EXPR_Variable>        
+  
+      <EXPR_Operation>
+        <ID>Fx0</ID>       
+        <Operator>sin</Operator>
+        <Operand>
+          <Type>Variable</Type>
+          <VarRef>x</VarRef>
+        </Operand>
+      </EXPR_Operation>
+    
+      <EXPR_Operation>
+        <ID>Fx1</ID>
+        <Operand>
+          <Type>Variable</Type>
+          <VarRef>x</VarRef>
+        </Operand>
+        <Operator>*</Operator>
+        <Operand>
+          <Type>Operation</Type>
+          <OperationRef>Fx0</OperationRef>
+        </Operand> 
+      </EXPR_Operation>
+      
+    </EXPR>
+    
+    
+    <!--<EXPR>
+      <ID>Fx</ID>
+      <EXPR_Variable>
+        <ID>x</ID>
+      </EXPR_Variable>
+      <EXPR_Operation>
+        <ID>Fx</ID>
+        <Operand>
+          <Type>Constant</Type>
+          <Constant>3</Constant>
+        </Operand>
+        <Operator>*</Operator>
+        <Operand>
+          <Type>Variable</Type>
+          <VarRef>x</VarRef>
+        </Operand>
+      </EXPR_Operation>
+    </EXPR>-->
+
+    <!--<EXPR>
+      <ID>Fx</ID>
+      <EXPR_Variable>
+        <ID>x</ID>
+      </EXPR_Variable>
+      <EXPR_Operation>
+        <ID>Fx</ID>       
+        <Operator>sin</Operator>
+        <Operand>
+          <Type>Variable</Type>
+          <VarRef>x</VarRef>
+        </Operand>
+      </EXPR_Operation>
+    </EXPR>-->
+    
+  </Event>
+</Event>

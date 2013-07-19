@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+  
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Vec3Array-->
+  <Vec3Array>
+    <Name>Vec3Array_QUAD</Name>
+    <Vec3d>
+      <x>-0.75</x>
+      <y>0</y>
+      <z>0</z>
+    </Vec3d>
+    <Vec3d>
+      <x>0.75</x>
+      <y>0</y>
+      <z>0</z>
+    </Vec3d>
+    <Vec3d>
+      <x>0.75</x>
+      <y>0</y>
+      <z>3</z>
+    </Vec3d>
+    <Vec3d>
+      <x>-0.75</x>
+      <y>0</y>
+      <z>3</z>
+    </Vec3d>   
+  </Vec3Array>
+
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ DrawArrays-->
+  <DrawArrays>
+    <Name>DrawArrays_QUADS</Name>
+    <PrimitiveSet>QUADS</PrimitiveSet>
+    <SetFirst>0</SetFirst>
+    <SetCount>4</SetCount>
+  </DrawArrays>
+  
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Geometry-->
+  <Geometry>
+    <Name>Geometry_Quad</Name>
+    <Ref>
+      <RefName>DrawArrays_QUADS</RefName>
+      <EntityType>DrawArrays</EntityType>
+      <RefType>AddPrimitiveSet</RefType>
+    </Ref>
+    <Ref>
+      <RefName>Vec3Array_QUAD</RefName>
+      <EntityType>Vec3Array</EntityType>
+      <RefType>SetVertexArray</RefType>
+    </Ref>
+  </Geometry>
+  
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Geode-->
+  <Geode>
+    <Name>Geode_QUAD</Name>
+    <Ref>
+      <RefName>Geometry_Quad</RefName>
+      <EntityType>Geometry</EntityType>
+      <RefType>AddDrawable</RefType>
+    </Ref>
+    <!--<Ref>
+      <RefName>WhiteEmissive</RefName>
+      <EntityType>Material</EntityType>
+      <RefType>SetAttribute</RefType>
+    </Ref>-->
+  </Geode>
+
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ PositionAttitudeTransform-->
+  <PositionAttitudeTransform>
+    <Name>PAT_QUAD</Name>
+    <Position>
+      <x>0</x>
+      <y>0</y>
+      <z>500</z>
+    </Position>
+    <Ref>
+      <RefName>Geode_QUAD</RefName>
+      <EntityType>Geode</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+  </PositionAttitudeTransform>
+
+</Environment>

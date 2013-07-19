@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Script> 
+  <EnvironmentFileName>ENV_FilePaths.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Groups_Conveyor.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Materials.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_LightsTextureCloth.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_CustomViewer_CC02.xml</EnvironmentFileName>
+  <!--<EnvironmentFileName>ENV_LinesAxis.xml</EnvironmentFileName>-->
+  <EnvironmentFileName>ENV_PHYSX_Kinematic_Actor.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_ConveyorCloth.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Conveyor_box.xml</EnvironmentFileName>  
+  <EnvironmentFileName>ENV_Text_Conveyor.xml</EnvironmentFileName>
+  
+ <!--<EventFileName>Event_CustomViewerScreenGrab.xml</EventFileName>-->
+  <EventFileName>Event_MoveGlobal.xml</EventFileName>
+</Script>

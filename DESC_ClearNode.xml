@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- Created with XMLFox -->
+<ClearNode>
+  <Name>$ClearNode</Name>
+  <ClearColor>
+    <x>0.1</x>
+    <y>0.3</y>
+    <z>0.1</z>
+    <w>1</w>
+  </ClearColor>
+</ClearNode>

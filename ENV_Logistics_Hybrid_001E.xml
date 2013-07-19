@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+
+  <!--<WriteNodeThroughputToFile>TRUE</WriteNodeThroughputToFile>-->
+  <WriteEnvStateToFile>TRUE</WriteEnvStateToFile>
+  
+  <Render>TRUE</Render>
+  <!--<QuitOnMaxTime>TRUE</QuitOnMaxTime>
+  <MaxTime>3</MaxTime>-->
+  
+  <!--✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇ -Logistics_nodes-->
+  <Logistics_node>
+    <Name>Logistics_node1</Name>
+    <PATRef>
+      <RefName>Node1PAT</RefName>
+      <EntityType>PAT</EntityType>
+    </PATRef>
+  </Logistics_node>
+
+  <Logistics_node>
+    <Name>Logistics_node2</Name>
+    <PATRef>
+      <RefName>Node2PAT</RefName>
+      <EntityType>PAT</EntityType>
+    </PATRef>
+  </Logistics_node>
+
+  <Logistics_node>
+    <Name>Logistics_node3</Name>
+    <PATRef>
+      <RefName>Node3PAT</RefName>
+      <EntityType>PAT</EntityType>
+    </PATRef>
+  </Logistics_node>
+  
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ EXPR-->
+  <EXPR>
+    <ID>EXPR_A</ID>
+
+    <EXPR_Variable>
+      <ID>t</ID>
+      <Type>time</Type>
+    </EXPR_Variable>  
+
+    <!--<EXPR_Variable>
+      <ID>A</ID>
+      <Type>node_mass</Type>      
+      <Ref>
+        <RefName>Logistics_node1</RefName>
+        <EntityType>Logistics_node</EntityType>     
+      </Ref>
+    </EXPR_Variable>-->
+
+    <EXPR_Variable>
+      <ID>B</ID>
+      <Value>0.1</Value>
+    </EXPR_Variable>
+
+    <EXPR_Operation>
+      <ID>F</ID>
+      <Operator>*</Operator>
+      <Operand>
+        <Type>Variable</Type>
+        <VarRef>t</VarRef>
+      </Operand>
+      <Operand>
+        <Type>Constant</Type>
+        <Constant>-0.2</Constant>
+      </Operand>
+    </EXPR_Operation>
+    
+    <EXPR_Operation>
+      <ID>G</ID>
+      <Operator>^</Operator>
+      <Operand>
+        <Type>Constant</Type>
+        <Constant>2.718</Constant>
+      </Operand>
+      <Operand>
+        <Type>Operation</Type>
+        <OperationRef>F</OperationRef>
+      </Operand>     
+    </EXPR_Operation>
+    
+    <EXPR_Operation>
+      <ID>H</ID>
+      <Operator>*</Operator>
+      <Operand>
+        <Type>Constant</Type>
+        <Constant>5</Constant>
+      </Operand>
+      
+      <!--<Operand>
+        <Type>Variable</Type>
+        <VarRef>A</VarRef>
+      </Operand>-->
+      <Operand>
+        <Type>Operation</Type>
+        <OperationRef>G</OperationRef>
+      </Operand>
+    </EXPR_Operation>
+
+    <!--<EXPR_Operation>
+      <ID>J</ID>
+      <Operator>+</Operator>
+      <Operand>
+        <Type>Constant</Type>
+        <Constant>0.0001</Constant>
+      </Operand>
+      <Operand>
+        <Type>Operation</Type>
+        <OperationRef>H</OperationRef>
+      </Operand>
+    </EXPR_Operation>-->
+
+  </EXPR>
+
+
+  
+  
+  
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Logistics_components-->
+  <Logistics_component>
+    <Name>Logistics_component1</Name>
+    <NodeRef>
+      <RefName>Node_Product1</RefName>
+      <EntityType>Node</EntityType>
+    </NodeRef>
+    <Mass>0.4</Mass>
+  </Logistics_component> 
+
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Logistics_producer1-->
+  <Logistics_producer>
+    <Name>Logistics_producer1</Name>
+    <!--<ProductionType>Periodic</ProductionType>
+    <PeriodTotal>2</PeriodTotal>-->
+
+    <ProductionType>EXPR</ProductionType>
+    <ProductionRateMethod>EXPR</ProductionRateMethod>
+    <PROD_EXPR_REF>
+      <RefName>EXPR_A</RefName>
+    </PROD_EXPR_REF>
+    
+    <ComponentRef>
+      <RefName>Logistics_component1</RefName>
+    </ComponentRef>
+    <NodeRef>
+      <RefName>Logistics_node1</RefName>
+    </NodeRef>
+    <TotalMass>100</TotalMass>
+    <InfiniteSupply>FALSE</InfiniteSupply>
+    
+  </Logistics_producer>
+
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Logistics_demand1-->
+  <Logistics_demand>
+    <Name>Logistics_demand1</Name>
+    <Type>Periodic</Type>
+    <!--<DemandType>Periodic</DemandType>-->
+    <DemandType>EXPR</DemandType>
+    <!--<EXPR_REF>EXPR_A</EXPR_REF>-->
+    <EXPR_REF>
+      <RefName>EXPR_A</RefName>
+      <EntityType>EXPR</EntityType>
+    </EXPR_REF>
+    
+    <!--<DemandType>Stochastic</DemandType>
+    <DemandRateMethod>Normal</DemandRateMethod>
+    <Mean>3</Mean>
+    <StandardDeviation>3</StandardDeviation>-->    
+
+    <!--<OrderType>DES</OrderType>
+    <SetActiveTimeType>Simulation</SetActiveTimeType>-->
+    <OrderType>Continuous</OrderType>
+    
+    <ComponentRef>
+      <RefName>Logistics_component1</RefName>
+    </ComponentRef>
+    <NodeRef>
+      <RefName>Logistics_node2</RefName>
+    </NodeRef>
+    <SourceNodeRef>
+      <RefName>Logistics_node1</RefName>
+    </SourceNodeRef>
+    <Period>0.1</Period>
+    <Logistics_operativeState>transit_store_at_destination</Logistics_operativeState>
+    <!--<Logistics_operativeState>transit_destroy_at_destination</Logistics_operativeState>-->
+  </Logistics_demand>
+
+  
+  
+  
+  
+ </Environment>

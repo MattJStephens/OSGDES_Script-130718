@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    Node_Product1-->
+  <Node>
+    <Name>OSG_1</Name>
+    <File>mj_cub_octahedron.3DS</File>
+  </Node>
+  <Node>
+    <Name>OSG_2</Name>
+    <File>five octahedra (five colors).3DS</File>
+  </Node>
+  <Node>
+    <Name>OSG_3</Name>
+    <File>mj_snub_dodecahedron.3DS</File>
+  </Node>
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    A-->
+  <Node>
+    <Name>OSG_A</Name>
+    <File>mj_dodecahedron_stellation_2.3ds</File>
+  </Node>
+  <PositionAttitudeTransform>
+    <Name>PAT_A</Name>
+    <Ref>
+      <RefName>OSG_A</RefName>
+      <EntityType>Node</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Position>
+      <x>-28.8675</x>
+      <y>50</y>
+      <z>0</z>
+    </Position>
+  </PositionAttitudeTransform>  
+  
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    B -->
+  <Node>
+    <Name>OSG_B</Name>
+    <File>mj_great_rhomb_cub_octahedron.3ds</File>
+  </Node>
+  <PositionAttitudeTransform>
+    <Name>PAT_B</Name>
+    <Ref>
+      <RefName>OSG_B</RefName>
+      <EntityType>Node</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Position>
+      <x>0</x>
+      <y>0</y>
+      <z>10</z>
+    </Position>
+  </PositionAttitudeTransform>
+  
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    C -->
+  <Node>
+    <Name>OSG_C</Name>
+    <File>mj_dodecahedron_stellation_3.3ds</File>
+  </Node>
+  <PositionAttitudeTransform>
+    <Name>PAT_C</Name>
+    <Ref>
+      <RefName>OSG_C</RefName>
+      <EntityType>Node</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Position>
+      <x>-28.8675</x>
+      <y>-50</y>
+      <z>0</z>
+    </Position>
+  </PositionAttitudeTransform>
+
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    D -->
+  <Node>
+    <Name>OSG_D</Name>
+    <File>great_rhomb_icosi_dodeahedron.3DS</File>
+  </Node>
+  <PositionAttitudeTransform>
+    <Name>PAT_D</Name>
+    <Ref>
+      <RefName>OSG_D</RefName>
+      <EntityType>Node</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Position>
+      <x>65</x>
+      <y>0</y>
+      <z>0</z>
+    </Position>
+  </PositionAttitudeTransform>
+  
+</Environment>

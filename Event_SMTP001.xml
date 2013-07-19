@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Event>
+  <Name>Sequencer1</Name>
+  <Type>Sequencer</Type>
+  <Subordination>Simultaneous</Subordination>
+
+  <Event>
+    <Name>SMTP</Name>
+    <Type>SMTP</Type>
+    <Recurrance>Singular</Recurrance>
+    <Variable>
+      <Identifier>HostID</Identifier>
+      <!--<Value>localhost</Value>-->
+      <Value>smtp.gmail.com</Value>
+    </Variable>
+   
+    <Variable>
+      <Identifier>Port</Identifier>
+      <Value>587</Value>
+      <!--<Value>465</Value> 
+      <Value>25</Value>-->
+    </Variable>
+
+    <Variable>
+      <Identifier>From</Identifier>
+      <Value>matthewstephens@hotmail.com</Value>
+    </Variable>   
+    
+    <Variable>
+      <Identifier>To</Identifier>
+      <!--<Value>matthewstephens@hotmail.com</Value>-->
+      <Value>matthew.stephens@internode.on.net</Value>
+    </Variable>
+    
+    <Variable>      
+      <Identifier>Data</Identifier>
+      <Value>some data</Value>
+    </Variable>
+
+
+
+  </Event>
+
+  
+</Event>

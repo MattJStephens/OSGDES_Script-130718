@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+  
+  <!--✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵   PhysX_Actor-->
+  <!--If you would like to directly control an actor's position and would like to
+  have it correctly interact with dynamic bodies and joints, you should create a dynamic body with the
+  NX_BF_KINEMATIC flag, and then use the moveGlobal*() commands to move it along a path!-->
+  <PhysX_Actor>
+    <Name>Actor_BF_KNMTC</Name>
+    <UserData>void_ptr</UserData>
+    <ApplyShaderColor>false</ApplyShaderColor>
+    <PhysX_ActorDesc>
+      <Density>10</Density>
+      <NxGlobalPose>
+        <t>
+          <x>5</x>
+          <y>20</y>
+          <z>-20</z>
+        </t>
+      </NxGlobalPose>      
+      <NxBodyDesc>
+        <AngularDamping>0</AngularDamping>
+        <Flag>NX_BF_KINEMATIC</Flag>
+      </NxBodyDesc>
+      <NxBoxShapeDesc>
+        <Dimensions>
+          <x>5</x>
+          <y>5</y>
+          <z>5</z>
+        </Dimensions>
+      </NxBoxShapeDesc>    
+    </PhysX_ActorDesc>
+    <Geode>     
+      <Box>
+        <Center>
+          <x>0</x>
+          <y>0</y>
+          <z>0</z>
+        </Center>
+        <x>5</x>
+        <y>5</y>
+        <z>5</z>
+      </Box>
+      <!--<Ref>
+        <RefName>Red</RefName>
+        <EntityType>Material</EntityType>
+        <RefType>SetAttribute</RefType>
+      </Ref>-->
+    </Geode>
+    <MatrixTransform>      
+      <Matrix>
+        <Translate>
+          <x>5</x>
+          <y>20</y>
+          <z>-20</z>
+        </Translate>
+      </Matrix>
+         
+    </MatrixTransform>
+  </PhysX_Actor> 
+  
+</Environment>

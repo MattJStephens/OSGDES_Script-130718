@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Process Description Script (OSG XML PDS)-->
+<!--✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠-->
+<Event>
+  <Name>SaveEventTree2</Name>
+  <FileName>EventTree2.xml</FileName>
+  <Type>SaveEventTree</Type>
+  <Recurrance>Singular</Recurrance>
+</Event>

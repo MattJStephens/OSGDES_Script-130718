@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    Node_Product1-->
+  <Node>
+    <Name>1</Name>
+    <File>mj_dodecahedron.3DS</File>
+  </Node>
+
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    A-->
+  <Node>
+    <Name>A</Name>
+    <File>mj_dodecahedron_stellation_yellow.3ds</File>
+  </Node>
+  <PositionAttitudeTransform>
+    <Name>A</Name>
+    <Ref>
+      <RefName>A</RefName>
+      <EntityType>Node</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Position>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </Position>
+  </PositionAttitudeTransform>  
+  
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    B -->
+  <Node>
+    <Name>B</Name>
+    <File>mj_great_rhomb_cub_octahedron.3ds</File>
+  </Node>
+  <PositionAttitudeTransform>
+    <Name>B</Name>
+    <Ref>
+      <RefName>B</RefName>
+      <EntityType>Node</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Position>
+      <x>50</x>
+      <y>0</y>
+      <z>0</z>
+    </Position>
+  </PositionAttitudeTransform>  
+  
+</Environment>

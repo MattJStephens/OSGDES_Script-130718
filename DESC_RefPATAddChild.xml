@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Ref>
+  <RefName>$Ref_PAT</RefName>
+  <EntityType>PAT</EntityType>
+  <RefType>AddChild</RefType>
+</Ref>

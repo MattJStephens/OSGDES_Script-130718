@@ -1,0 +1,11 @@
+<?xml version="1.0"?><!--mjs OpenSceneGraph Extensible Markup Language Process Description Script (OSG XML PDS)-->
+
+<MatrixTransform>
+  <Matrix>
+    <Translate>
+      <x>5</x>
+      <y>7</y>
+      <z>10</z>
+    </Translate>
+  </Matrix>
+</MatrixTransform>

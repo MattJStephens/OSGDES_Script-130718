@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Geode>
+  <Name>$Geode</Name>
+  <Ref>
+    <RefName>$Geometry</RefName>
+    <EntityType>Geometry</EntityType>
+    <RefType>AddDrawable</RefType>
+  </Ref>
+  <!--<Ref>
+    <RefName>$Material</RefName>
+    <EntityType>Material</EntityType>
+    <RefType>SetAttribute</RefType>
+  </Ref>-->
+</Geode>

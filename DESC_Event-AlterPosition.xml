@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<Event>
+  <Name>$Name</Name>
+  <Type>AlterPosition</Type>  
+  <Variable>
+    <Identifier>RefPAT</Identifier>
+    <Value>$RefPAT</Value>
+  </Variable>
+  <Variable>
+    <Identifier>x</Identifier>
+    <Value>0</Value>
+  </Variable>
+  <Variable>
+    <Identifier>y</Identifier>
+    <Value>0</Value>
+  </Variable>
+  <Variable>
+    <Identifier>z</Identifier>
+    <Value>0</Value>
+  </Variable>
+</Event>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!--mjs-->
+<Event>
+  <Name>$Name</Name>
+  <Type>Sequencer</Type>
+  <Subordination>Simulataneous</Subordination>
+  <Event>
+    <Name>$Name</Name>
+    <Type>CreateWave</Type>
+    <Inception>Spontaneous</Inception>
+    <Recurrance>Singular</Recurrance>
+    <Variable>
+      <Identifier>FileName</Identifier>
+      <Value>wave_1760.wav</Value>
+    </Variable>
+    <Variable>
+      <Identifier>Channels</Identifier>
+      <Value>1</Value>
+    </Variable>
+    <Variable>
+      <Identifier>SampleRate</Identifier>
+      <Value>8192</Value>
+    </Variable>
+    <Variable>
+      <Identifier>BitsPerSample</Identifier>
+      <Value>16</Value>
+    </Variable>
+    <Variable>
+      <Identifier>NumSamples</Identifier>
+      <Value>65536</Value>
+    </Variable>
+    <Variable>
+      <Identifier>Type</Identifier>
+      <Value>Sin</Value>
+    </Variable>
+    <Variable>
+      <Identifier>Frequency</Identifier>
+      <Value>1760</Value>
+    </Variable>    
+  </Event>
+</Event>

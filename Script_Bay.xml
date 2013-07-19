@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Script>
+  <EnvironmentFileName>ENV_FilePaths.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Groups_Bay.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Materials.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Lights.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_CustomViewerBay.xml</EnvironmentFileName>
+  <!--<EnvironmentFileName>ENV_LinesAxisBay.xml</EnvironmentFileName>-->
+  <EnvironmentFileName>ENV_PortLand.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_SkyNodeBay.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_PortSea.xml</EnvironmentFileName>
+  <!--<EnvironmentFileName>ENV_BillboardBay.xml</EnvironmentFileName>-->
+  <EnvironmentFileName>ENV_Bay_Forest1.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_AnimationPath.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Text_Bay.xml</EnvironmentFileName>
+
+  <EventFileName>Event_UpdateViewerAnimate.xml</EventFileName> 
+</Script>

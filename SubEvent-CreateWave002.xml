@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--mjs-->
+
+<Event>
+  <Name>SubCreateWave</Name>
+  <Type>CreateWave</Type>
+  <Inception>Spontaneous</Inception>
+  <Recurrance>Singular</Recurrance>
+  <Variable>
+    <Identifier>FileName</Identifier>
+    <Value>wave-random.wav</Value>
+  </Variable>
+  <Variable>
+    <Identifier>Channels</Identifier>
+    <Value>1</Value>
+  </Variable>
+  <Variable>
+    <Identifier>SampleRate</Identifier>   
+    <Value>11025</Value>
+  </Variable>
+  <Variable>
+    <Identifier>BitsPerSample</Identifier>
+    <Value>16</Value>
+  </Variable>
+  <Variable>
+    <Identifier>RandNumSamples</Identifier>  
+    <Value>262144</Value>  
+  </Variable>
+  <Variable>
+    <Identifier>Type</Identifier>
+    <Value>sin</Value>
+  </Variable>
+  <Variable>
+    <Identifier>RandomChords</Identifier>
+    <Value>5</Value>
+  </Variable>
+  <Variable>
+    <Identifier>Dynamics</Identifier>
+    <Value>Stephens</Value>
+  </Variable>
+  <Variable>
+    <Identifier>ParamC</Identifier>
+    <Value>0.5</Value>
+  </Variable>
+</Event>
+  

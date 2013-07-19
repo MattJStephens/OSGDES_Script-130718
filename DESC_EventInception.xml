@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<Inception>
+  <Type>
+    <Name>Spontaneous</Name>
+  </Type>
+  <Type>
+    <Name>Conditional</Name>
+  </Type>
+  <Type>
+    <Name>MemMap_Conditional</Name>
+  </Type>
+</Inception>
+
+

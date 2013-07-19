@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+
+  <!-- ⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙⊙ Background color-->
+  <ClearNode>
+    <Name>ClearNode1</Name>
+    <ClearColor>
+      <x>0.1</x>
+      <y>0.02</y>
+      <z>0.02</z>
+      <w>1</w>
+    </ClearColor>
+  </ClearNode>
+
+  <!-- ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ set active indicies-->
+  <ActiveGroupIndex>0</ActiveGroupIndex>
+
+  <!-- ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ Root Group-->
+  <Group>
+    <Name>RootGroup</Name>
+    <Ref>
+      <RefName>Scene</RefName>
+      <EntityType>Group</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+  </Group>
+  <!--★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ Scene Group-->
+
+  <Group>
+    <Name>Scene</Name>
+    <Ref>
+      <RefName>ClearNode1</RefName>
+      <EntityType>ClearNode</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>LS1PAT</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>PAT_A</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>PAT_B</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>PAT_C</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>PAT_D</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>PAT_L3</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>LINE2</RefName>
+      <EntityType>PAT</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>Text_Geode</RefName>
+      <EntityType>Geode</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Ref>
+      <RefName>HUDProjectionMatrix</RefName>
+      <EntityType>Projection</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+  </Group>
+</Environment>

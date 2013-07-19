@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Event>
+  <Name>Sequencer1</Name>
+  <Type>Sequencer</Type>
+  <Subordination>Simultaneous</Subordination>
+  <!--★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ UpdateViewer -->
+  <Event>
+    <Name>UpdateViewerAnimate1</Name>
+    <Type>UpdateViewerAnimate</Type>
+    <ViewerUpdateType>UpdateCamera</ViewerUpdateType>
+    <CameraUpdateType>SetViewMatrix</CameraUpdateType>
+    <Variable>
+      <Identifier>AnimationPath</Identifier>
+      <Value>AnimationPath1</Value>
+      <DataType>String</DataType>
+    </Variable>
+  </Event>
+  <!--★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ AlterText -->
+  <Event>
+    <Name>AlterText1</Name>
+    <Type>AlterText</Type>
+    <AlterString>Camera</AlterString>
+    <RefName>T1</RefName>
+    <Ref>
+      <RefName>Camera1</RefName>
+      <EntityType>Camera</EntityType>
+    </Ref>
+  </Event>
+  <!--★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ UpdateViewerAnimate --><!--
+  <Event>
+    <Name>UpdateViewerAnimate1</Name>
+    <Type>UpdateViewerAnimate</Type>    
+     <Variable>
+        <Identifier>Camera</Identifier>
+        <Value>Camera1</Value>
+        <DataType>String</DataType>
+      </Variable>
+    <Variable>
+      <Identifier>AnimationPath</Identifier>
+      <Value>AnimationPath1</Value>
+      <DataType>String</DataType>
+    </Variable>
+  </Event>-->
+ </Event>

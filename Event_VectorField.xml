@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Process Description Script (OSG XML PDS)-->
+<!--✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠-->
+<Event>
+  <Name>Sequencer1</Name>
+  <Type>Sequencer</Type>
+  <Subordination>Simultaneous</Subordination>
+  <!--★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ AlterText -->
+  <Event>
+    <Name>AlterText1</Name>
+    <Type>AlterText</Type>
+    <AlterString>ElapsedSimulationTime</AlterString>
+    <RefName>T1</RefName>
+  </Event> 
+ 
+  <Event>
+    <Name>Sequencer2</Name>
+    <Type>Sequencer</Type>
+    <Subordination>PeriodicSimultaneous</Subordination>
+    <Period>0.1</Period>
+    <!--<Event>
+      <Name>UpdateSimulationTime1</Name>
+      <Type>UpdateSimulationTime</Type>
+      <SimulationTimeIncrement>0.2</SimulationTimeIncrement>
+    </Event>-->
+    <!--<Event>
+      <Name>UpdateVelocity1</Name>
+      <Type>UpdateVelocity</Type>
+      <TimeType>Simulation</TimeType>
+      <Position>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </Position>
+      <Velocity>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </Velocity>
+      <OrientationAxis>
+        <x>1</x>
+        <y>1</y>
+        <z>0</z>
+      </OrientationAxis>
+      <AngularVelocity>10</AngularVelocity>
+      <RefName>GeodeLine1PAT</RefName>
+    </Event>-->
+    
+    <Event>
+      <Name>ScreenGrab</Name>
+      <Type>ScreenGrab</Type>      
+      <Variable>
+        <Identifier>Ref_image</Identifier>
+        <Value>ScreenGrab</Value>
+      </Variable>
+      <Variable>
+        <Identifier>FileName</Identifier>
+        <Value>VectorField1_</Value>
+      </Variable>
+      <Variable>
+        <Identifier>FileExtension</Identifier>
+        <Value>jpg</Value>
+      </Variable>      
+      <Variable>
+        <Identifier>Height</Identifier>
+        <Value>300</Value>
+      </Variable>
+      <Variable>
+        <Identifier>Width</Identifier>
+        <Value>400</Value>
+      </Variable>
+      <Variable>
+        <Identifier>BitColor</Identifier>
+        <Value>24</Value>
+      </Variable>
+    </Event>
+  </Event>
+</Event>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--mjs OpenSceneGraph Extensible Markup Language Process Description Script (OSG XML PDS)-->
+<Event>
+  <Name>Sequencer1</Name>
+  <Type>Sequencer</Type>
+  <Subordination>Simultaneous</Subordination> 
+  <Event>
+    <Name>LoadScript</Name>
+    <Type>LoadScript</Type>
+    <Inception>MemMap_Conditional</Inception>
+    <Variable>
+      <Identifier>mem_map_str</Identifier>
+      <Value>MJSRTF_Server</Value>
+      <DataType>String</DataType>
+    </Variable>
+    <Variable>
+      <Identifier>file_name</Identifier>
+      <Value>Environment_Light.xml</Value>
+      <DataType>String</DataType>
+    </Variable>
+    <Variable>
+      <Identifier>mem_map_address</Identifier>
+      <Value>0</Value>
+      <DataType>integer</DataType>
+    </Variable>
+    <Variable>
+      <Identifier>mem_test</Identifier>
+      <Value>x</Value>
+      <DataType>char</DataType>
+    </Variable>
+    <Recurrance>Singular</Recurrance>
+  </Event>
+  <Event>
+    <Name>SaveEnvironmentTree</Name>
+    <Type>SaveEnvironmentTree</Type>
+    <FileName>EnvironmentTreeX2.xml</FileName>
+    <Recurrance>Singular</Recurrance>
+  </Event>
+
+  <Event>
+    <Name>SaveEventTree</Name>
+    <Type>SaveEventTree</Type>
+    <FileName>EventTreeX.xml</FileName>
+    <Recurrance>Singular</Recurrance>
+  </Event>
+</Event>

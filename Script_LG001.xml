@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<Script>
+  
+  <EnvironmentFileName>ENV_Groups_LG001.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Lights_LG001.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Viewer_LG001.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Materials.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Lines_LG001.xml</EnvironmentFileName>
+
+  <EnvironmentFileName>ENV_LG001.xml.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Nodes_LG001.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Logistics_LG001.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Text.xml</EnvironmentFileName>
+
+  <EventFileName>Event_LG001.xml</EventFileName>
+  
+</Script>

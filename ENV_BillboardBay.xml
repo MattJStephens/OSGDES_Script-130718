@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+  
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Vec3Array - verticies-->
+  <Vec3Array>
+    <Name>Vec3Array_QUAD</Name>
+    <Vec3d>
+      <x>-6</x>
+      <y>0</y>
+      <z>0</z>
+    </Vec3d>
+    <Vec3d>
+      <x>6</x>
+      <y>0</y>
+      <z>0</z>
+    </Vec3d>
+    <Vec3d>
+      <x>6</x>
+      <y>0</y>
+      <z>10</z>
+    </Vec3d>
+    <Vec3d>
+      <x>-6</x>
+      <y>0</y>
+      <z>10</z>
+    </Vec3d>
+  </Vec3Array>
+  
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ DrawArrays-->
+  <DrawArrays>
+    <Name>DrawArrays_QUADS</Name>
+    <PrimitiveSet>QUADS</PrimitiveSet>
+    <SetFirst>0</SetFirst>
+    <SetCount>4</SetCount>
+  </DrawArrays>
+  
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Vec4Array - vertex colors-->
+  <Vec4Array>
+    <Name>Vec4Array_QUAD</Name>
+    <Vec4>
+      <x>1</x>
+      <y>1</y>
+      <z>1</z>
+      <w>1</w>
+    </Vec4>
+    <Vec4>
+      <x>1</x>
+      <y>1</y>
+      <z>1</z>
+      <w>1</w>
+    </Vec4>
+    <Vec4>
+      <x>1</x>
+      <y>1</y>
+      <z>1</z>
+      <w>1</w>
+    </Vec4>
+    <Vec4>
+      <x>1</x>
+      <y>1</y>
+      <z>1</z>
+      <w>1</w>
+    </Vec4>
+  </Vec4Array>
+  
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Vec2Array - texture coords-->
+  <Vec2Array>
+    <Name>Vec2Array_QUAD</Name>
+    <Vec2>
+      <x>0</x>
+      <y>0</y>      
+    </Vec2>
+    <Vec2>
+      <x>1</x>
+      <y>0</y>
+    </Vec2>
+    <Vec2>
+      <x>1</x>
+      <y>1</y>
+    </Vec2>
+    <Vec2>
+      <x>0</x>
+      <y>1</y>
+    </Vec2>
+  </Vec2Array>  
+  
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Image-->
+  <Image>
+    <Name>Image1</Name>
+    <FileName>tree08L.tga</FileName>
+  </Image>
+  
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Texture2D-->
+  <Texture2D>
+    <Name>Texture2D_QUAD</Name>
+    <Ref>
+      <RefName>Image1</RefName>
+      <EntityType>Image</EntityType>
+      <RefType>SetImage</RefType>
+    </Ref>
+  </Texture2D>  
+  
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ AlphaFunc-->
+  <AlphaFunc>
+    <Name>AlphaFunc_QUAD</Name>
+    <GequalMode>0.05</GequalMode>
+  </AlphaFunc>
+    
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ StateSet-->
+  <StateSet>
+    <Name>StateSet_QUAD</Name>
+    <SetMode>GL_LIGHTING_OFF</SetMode>
+    <SetMode>GL_BLEND_ON</SetMode>
+    <Ref>
+      <RefName>Texture2D_QUAD</RefName>
+      <EntityType>Texture2D</EntityType>
+      <RefType>SetTextureAttributesAndModes</RefType>
+    </Ref>
+    <Ref>
+      <RefName>AlphaFunc_QUAD</RefName>
+      <EntityType>AlphaFunc</EntityType>
+      <RefType>SetAttributeAndModes</RefType>
+    </Ref>
+  </StateSet>   
+  
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Geometry-->
+  <Geometry>
+    <Name>Geometry_Quad</Name>
+    <Ref>
+      <RefName>DrawArrays_QUADS</RefName>
+      <EntityType>DrawArrays</EntityType>
+      <RefType>AddPrimitiveSet</RefType>
+    </Ref>
+    <Ref>
+      <RefName>Vec3Array_QUAD</RefName>
+      <EntityType>Vec3Array</EntityType>
+      <RefType>SetVertexArray</RefType>
+    </Ref>
+    <Ref>
+      <RefName>Vec4Array_QUAD</RefName>
+      <EntityType>Vec4Array</EntityType>
+      <RefType>SetColorArray</RefType>
+    </Ref>
+    <Ref>
+      <RefName>Vec2Array_QUAD</RefName>
+      <EntityType>Vec2Array</EntityType>
+      <RefType>SetTexCoordArray</RefType>
+    </Ref>
+    <SetColorBinding>BIND_PER_VERTEX</SetColorBinding>
+    <Ref>
+      <RefName>StateSet_QUAD</RefName>
+      <EntityType>StateSet</EntityType>
+      <RefType>SetStateSet</RefType>
+    </Ref>
+  </Geometry>  
+
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Billboard-->
+  <Billboard>
+    <Name>Billboard_QUAD1</Name>
+    <Mode>AXIAL_ROT</Mode>
+    <Position>
+      <x>-2630</x>
+      <y>-72408</y>
+      <z>0-</z>
+    </Position>
+    <Axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </Axis>
+    <Normal>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </Normal>
+    <Ref>
+      <RefName>Geometry_Quad</RefName>
+      <EntityType>Geometry</EntityType>
+      <RefType>AddDrawable</RefType>
+    </Ref>
+    <Ref>
+      <RefName>Node_port_land</RefName>
+      <EntityType>Node</EntityType>
+      <RefType>SetZIntersect</RefType>
+    </Ref>
+  </Billboard>
+  
+ 
+  
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ MultipleRandomEntities--><!--
+  <MultipleRandomEntities>
+    <Name>MRE1</Name>
+    <Method>Region</Method>
+    <Vec2Array>
+      <Name>Vec2Array_Region</Name>
+      <Vec2d>
+        <x>-1000</x>
+        <y>0</y>
+      </Vec2d>
+      <Vec2d>
+        <x>1000</x>
+        <y>0</y>
+      </Vec2d>
+      <Vec2d>
+        <x>1000</x>
+        <y>1000</y>
+      </Vec2d>
+      <Vec2d>
+        <x>-1000</x>
+        <y>1000</y>
+      </Vec2d>
+    </Vec2Array>
+    <Ref>
+      <RefName>Billboard_QUAD1</RefName>
+      <EntityType>Billboard</EntityType>
+      <RefType>BaseEntity</RefType>
+    </Ref>    
+  </MultipleRandomEntities>-->
+  
+</Environment>

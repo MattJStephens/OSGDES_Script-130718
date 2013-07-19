@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Script>
+  <EnvironmentFileName>ENV_FilePaths.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Groups_animation_path_sphere.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Materials.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Lights.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_CustomViewer.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_LinesAxis.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_SkyNode1.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Ripple_grass.xml</EnvironmentFileName> 
+  <EnvironmentFileName>ENV_AnimationPath_sphere.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Text.xml</EnvironmentFileName>
+  
+  <EventFileName>Event_UpdateViewer.xml</EventFileName>
+  <!--<EventFileName>Event_UpdateViewerAnimate.xml</EventFileName>--> 
+</Script>

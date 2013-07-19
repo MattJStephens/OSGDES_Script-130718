@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Script>
+  <EnvironmentFileName>ENV_FilePaths.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Groups_Box.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Materials.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Lights.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_CustomViewerBox.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_LinesBox.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_Text.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_PHYSX_Monolith.xml</EnvironmentFileName>  
+  
+  <EventFileName>Event_UpdateViewerAndPos.xml</EventFileName> 
+</Script>

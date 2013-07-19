@@ -1,0 +1,21 @@
+<?xml version="1.0"?><!--mjs OpenSceneGraph Extensible Markup Language Process Description Script (OSG XML PDS)--><Event>
+	<Name>Sequencer1</Name>
+	<Type>EventType_Sequencer</Type>
+	<Event>
+	<Name>AlterText1</Name>
+	<Type>EventType_AlterText</Type></Event>
+	<Event>
+	<Name>AlterText2</Name>
+	<Type>EventType_AlterText</Type></Event>
+	<Event>
+	<Name>Sequencer2</Name>
+	<Type>EventType_Sequencer</Type>
+	<Event>
+	<Name>UpdateSimulationTime1</Name>
+	<Type>EventType_UpdateSimulationTime</Type></Event>
+	<Event>
+	<Name>Velocitor2</Name>
+	<Type>EventType_UpdateVelocity</Type></Event>
+	<Event>
+	<Name>SaveEventTree2</Name>
+	<Type>EventType_SaveEventTree</Type></Event></Event></Event>

@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+
+ 
+  
+  <!--✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇ -Logistics_node-->
+  <Logistics_node>
+    <Name>Logistics_node1</Name>
+    <PATRef>
+      <RefName>Node1PAT</RefName>
+      <EntityType>PAT</EntityType>
+    </PATRef>
+  </Logistics_node>
+  
+  <!--✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇ -Logistics_node-->
+  <Logistics_node>
+    <Name>Logistics_node2</Name>
+    <Record>true</Record>
+    <PATRef>
+      <RefName>Node2PAT</RefName>
+      <EntityType>PAT</EntityType>      
+    </PATRef>
+  </Logistics_node>
+  <!--✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇ -Logistics_node-->
+  <Logistics_node>
+    <Name>Logistics_node3</Name>
+    <PATRef>
+      <RefName>Node3PAT</RefName>
+      <EntityType>PAT</EntityType>
+    </PATRef>
+  </Logistics_node>
+  <!--✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇ -Logistics_node-->
+  <Logistics_node>
+    <Name>Logistics_node4</Name>
+    <PATRef>
+      <RefName>Node4PAT</RefName>
+      <EntityType>PAT</EntityType>
+    </PATRef>
+  </Logistics_node>
+  <!--✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇✇ -Logistics_node-->
+  <Logistics_node>
+    <Name>Logistics_node5</Name>
+    <PATRef>
+      <RefName>Node5PAT</RefName>
+      <EntityType>PAT</EntityType>
+    </PATRef>
+  </Logistics_node>
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Logistics_component1-->
+  <Logistics_component>
+    <Name>Logistics_component1</Name>
+    <NodeRef>
+      <RefName>Node0</RefName>
+      <EntityType>Node</EntityType>
+    </NodeRef>   
+  </Logistics_component>
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Logistics_component1-->
+  <Logistics_component>
+    <Name>Logistics_component2</Name>
+    <NodeRef>
+      <RefName>Node0B</RefName>
+      <EntityType>Node</EntityType>
+    </NodeRef>
+  </Logistics_component>
+
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Logistics_producer1-->
+  <Logistics_producer>
+    <Name>Logistics_producer1</Name>
+    <ProductionType>PeriodicVolume</ProductionType>
+    <PeriodTotal>2</PeriodTotal>
+    <Volume>20</Volume>
+    <TotalVolume>500</TotalVolume>
+    <ComponentRef>
+      <RefName>Logistics_component1</RefName>
+    </ComponentRef>
+    <NodeRef>
+      <RefName>Logistics_node1</RefName>
+    </NodeRef>
+  </Logistics_producer>
+
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Logistics_producer2-->
+  <Logistics_producer>
+    <Name>Logistics_producer2</Name>
+    <ProductionType>PeriodicVolume</ProductionType>
+    <PeriodTotal>2</PeriodTotal>
+    <ComponentRef>
+      <RefName>Logistics_component2</RefName>
+    </ComponentRef>
+    <NodeRef>
+      <RefName>Logistics_node3</RefName>
+    </NodeRef>
+  </Logistics_producer>
+  
+  
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Logistics_demand1-->
+  <Logistics_demand>
+    <Name>Logistics_demand1</Name>
+    <Type>Periodic</Type>
+    <DemandType>Periodic</DemandType>
+    <Period>1</Period>
+    <OrderType>Continuous</OrderType>
+    <ComponentRef>
+      <RefName>Logistics_component1</RefName>
+    </ComponentRef>
+    <NodeRef>
+      <RefName>Logistics_node2</RefName>
+    </NodeRef>
+    <SourceNodeRef>
+      <RefName>Logistics_node1</RefName>
+    </SourceNodeRef>
+  
+    <Logistics_operativeState>transit_store_at_destination</Logistics_operativeState>
+  </Logistics_demand>
+
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Logistics_demand2-->
+  <Logistics_demand>
+    <Name>Logistics_demand2</Name>
+    <Type>Periodic</Type>
+    <DemandType>Periodic</DemandType>
+    <Period>1</Period>
+    <OrderType>Continuous</OrderType>
+    <ComponentRef>
+      <RefName>Logistics_component2</RefName>
+    </ComponentRef>
+    <NodeRef>
+      <RefName>Logistics_node4</RefName>
+    </NodeRef>
+    <SourceNodeRef>
+      <RefName>Logistics_node3</RefName>
+    </SourceNodeRef>   
+    <Logistics_operativeState>transit_store_at_destination</Logistics_operativeState>
+  </Logistics_demand>
+
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Logistics_demand3-->
+  <Logistics_demand>
+    <Name>Logistics_demand3</Name>
+    <Type>Periodic</Type>
+    <DemandType>Periodic</DemandType>
+    <Period>1</Period>
+    <OrderType>Continuous</OrderType>
+    <ComponentRef>
+      <RefName>Logistics_component1</RefName>
+    </ComponentRef>
+    <NodeRef>
+      <RefName>Logistics_node5</RefName>
+    </NodeRef>
+    <SourceNodeRef>
+      <RefName>Logistics_node2</RefName>
+    </SourceNodeRef>
+    
+    <Logistics_operativeState>transit_store_at_destination</Logistics_operativeState>
+  </Logistics_demand>
+
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Logistics_demand4-->
+  <Logistics_demand>
+    <Name>Logistics_demand4</Name>
+    <Type>Periodic</Type>
+    <DemandType>Periodic</DemandType>
+    <Period>1</Period>
+    <OrderType>Continuous</OrderType>
+    <ComponentRef>
+      <RefName>Logistics_component2</RefName>
+    </ComponentRef>
+    <NodeRef>
+      <RefName>Logistics_node5</RefName>
+    </NodeRef>
+    <SourceNodeRef>
+      <RefName>Logistics_node4</RefName>
+    </SourceNodeRef>
+  
+    <Logistics_operativeState>transit_store_at_destination</Logistics_operativeState>
+  </Logistics_demand>
+
+</Environment>

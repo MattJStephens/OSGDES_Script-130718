@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Process Description Script (OSG XML PDS)-->
+<!--✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠✠-->
+<Event>
+  <Name>Sequencer1</Name>
+  <Type>Sequencer</Type>
+  <Subordination>Simultaneous</Subordination>
+  <Event>
+    <Name>CreateProcess</Name>
+    <!--<FileName>EventTree1.xml</FileName>-->
+    <Type>CreateProcess</Type>
+    <Recurrance>Singular</Recurrance>
+    <Variable>
+      <Identifier>
+        CommandLine
+      </Identifier>
+      <DataType>
+        string
+      </DataType>
+      <Value>
+        C:\mjs\OSG_DES_source\Debug\OSG_DES_WindowsForms.exe
+      </Value>
+    </Variable>
+  </Event> 
+</Event>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Event>
+  <Name>$Name</Name>
+  <Type>UpdateViewer</Type>
+  <ViewerUpdateType>UpdateCamera</ViewerUpdateType>
+  <CameraUpdateType>SetViewMatrix</CameraUpdateType>
+  <!--<CameraUpdateType>SetViewMatrixLookAt</CameraUpdateType>-->
+</Event>

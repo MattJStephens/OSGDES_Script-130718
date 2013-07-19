@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<Event>
+  <Name>$Sequencer</Name>
+  <Type>Sequencer</Type>
+  <Subordination>Simultaneous</Subordination>
+</Event>

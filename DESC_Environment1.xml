@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- Created with XMLFox -->
+<Environment>
+<Entity>
+    <Name>Array</Name>
+</Entity>
+<Entity>
+    <Name>AlphaFunc</Name>
+</Entity>
+<Entity>
+    <Name>AnimationControlPoint</Name>
+</Entity>
+<Entity>
+    <Name>AnimationPath</Name>
+</Entity>
+<Entity>
+    <Name>AnisotropicLighting</Name>
+</Entity>
+<Entity>
+    <Name>Billboard</Name>
+</Entity>
+<Entity>
+    <Name>BoundingBox</Name>
+</Entity>
+<Entity>
+    <Name>ClearNode</Name>
+</Entity>
+<Entity>
+    <Name>Camera</Name>
+</Entity>
+<Entity>
+    <Name>Logistics_demand</Name>
+</Entity>
+<Entity>
+    <Name>Logistics_node</Name>
+</Entity>
+<Entity>
+    <Name>Logistics_operation</Name>
+</Entity>
+<Entity>
+    <Name>Logistics_producer</Name>
+</Entity>
+<Entity>
+    <Name>Logistics_component</Name>
+</Entity>
+<Entity>
+    <Name>Logistics_route</Name>
+</Entity>
+<Entity>
+    <Name>DiscreteEvent</Name>
+</Entity>
+<Entity>
+    <Name>DrawElementsUInt</Name>
+</Entity>
+<Entity>
+    <Name>DrawArrays</Name>
+</Entity>
+<Entity>
+    <Name>Drawable</Name>
+</Entity>
+<Entity>
+    <Name>EntityArray</Name>
+</Entity>
+<Entity>
+    <Name>EntityPhysXCube</Name>
+</Entity>
+<Entity>
+    <Name>EntityPhysXPlane</Name>
+</Entity>
+<Entity>
+    <Name>EntityPhysXCloth</Name>
+</Entity>
+<Entity>
+    <Name>EntityPhysXSphere</Name>
+</Entity>
+<Entity>
+    <Name>EntityPhysXSoftBody</Name>
+</Entity>
+<Entity>
+    <Name>EntityPhysXFluid</Name>
+</Entity>
+<Entity>
+    <Name>EntityPhysXTerrain</Name>
+</Entity>
+<Entity>
+    <Name>ExplosionEffect</Name>
+</Entity>
+<Entity>
+    <Name>ExplosionDebrisEffect</Name>
+</Entity>
+<Entity>
+    <Name>EXPR</Name>
+</Entity>
+<Entity>
+    <Name>EXPRVectorField
+</Name>
+</Entity>
+<Entity>
+    <Name>FirstPersonManipulator</Name>
+</Entity>
+<Entity>
+    <Name>FireEffect</Name>
+</Entity>
+<Entity>
+    <Name>Geode</Name>
+</Entity>
+<Entity>
+    <Name>Geometry</Name>
+</Entity>
+<Entity>
+    <Name>Gaussian</Name>
+</Entity>
+<Entity>
+    <Name>Group</Name>
+</Entity>
+<Entity>
+    <Name>Graph</Name>
+</Entity>
+<Entity>
+    <Name>HeightField</Name>
+</Entity>
+<Entity>
+    <Name>Image</Name>
+</Entity>
+<Entity>
+    <Name>Imposter</Name>
+</Entity>
+<Entity>
+    <Name>KeySwitchMatrixManipulator</Name>
+</Entity>
+<Entity>
+    <Name>Light</Name>
+</Entity>
+<Entity>
+    <Name>LightSource</Name>
+</Entity>
+<Entity>
+    <Name>LineSegment</Name>
+</Entity>
+<Entity>
+    <Name>Material</Name>
+</Entity>
+<Entity>
+    <Name>Matrix</Name>
+</Entity>
+<Entity>
+    <Name>MatrixTransform</Name>
+</Entity>
+<Entity>
+    <Name>MemoryMapClient</Name>
+</Entity>
+<Entity>
+    <Name>MemoryMapServer</Name>
+</Entity>
+<Entity>
+    <Name>MultipleRandomEntities</Name>
+</Entity>
+<Entity>
+    <Name>MultiplePAT</Name>
+</Entity>
+<Entity>
+    <Name>Node</Name>
+</Entity>
+<Entity>
+    <Name>PhysX_Actor</Name>
+</Entity>
+<Entity>
+    <Name>PhysX_ActorDesc</Name>
+</Entity>
+<Entity>
+    <Name>OSGSequence</Name>
+</Entity>
+<Entity>
+    <Name>Particle</Name>
+</Entity>
+<Entity>
+    <Name>ParsedVariable</Name>
+</Entity>
+<Entity>
+    <Name>PointSprite</Name>
+</Entity>
+<Entity>
+    <Name>PolygonMode</Name>
+</Entity>
+<Entity>
+    <Name>Program</Name>
+</Entity>
+<Entity>
+    <Name>Projection</Name>
+</Entity>
+<Entity>
+    <Name>Quat</Name>
+</Entity>
+<Entity>
+    <Name>Reference</Name>
+</Entity>
+<Entity>
+    <Name>Sequence</Name>
+</Entity>
+<Entity>
+    <Name>Set</Name>
+</Entity>
+<Entity>
+    <Name>Shader</Name>
+</Entity>
+<Entity>
+    <Name>ShapeDrawable</Name>
+</Entity>
+<Entity>
+    <Name>StateSet</Name>
+</Entity>
+<Entity>
+    <Name>StateAttribute</Name>
+</Entity>
+<Entity>
+    <Name>SmokeEffect</Name>
+</Entity>
+<Entity>
+    <Name>Text</Name>
+</Entity>
+<Entity>
+    <Name>Texture2D</Name>
+</Entity>
+<Entity>
+    <Name>Uniform</Name>
+</Entity>
+<Entity>
+    <Name>UByteArray</Name>
+</Entity>
+<Entity>
+    <Name>Vec2Array</Name>
+</Entity>
+<Entity>
+    <Name>Vec3Array</Name>
+</Entity>
+<Entity>
+    <Name>Vec4Array</Name>
+</Entity>
+<Entity>
+    <Name>Viewer</Name>
+</Entity>
+<Entity>
+    <Name>XGMML_graph</Name>
+</Entity>
+</Environment>

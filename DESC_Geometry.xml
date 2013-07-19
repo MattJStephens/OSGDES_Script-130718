@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- Created with XMLFox -->
+<Geometry>
+  <Name>$Geometry</Name>
+  <Ref>
+    <RefName>$DrawArrays</RefName>
+    <EntityType>DrawArrays</EntityType>
+    <RefType>AddPrimitiveSet</RefType>
+  </Ref>
+  <Ref>
+    <RefName>$Vec3Array</RefName>
+    <EntityType>Vec3Array</EntityType>
+    <RefType>SetVertexArray</RefType>
+  </Ref>
+</Geometry>

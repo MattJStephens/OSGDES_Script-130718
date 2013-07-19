@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- Created with XMLFox -->
+
+<EXPR>
+  <ID>$EXPR</ID>
+  <EXPR_Variable>
+    <ID>x</ID>
+    <Value>1</Value>
+  </EXPR_Variable>
+  <EXPR_Variable>
+    <ID>2</ID>
+    <Value>2</Value>
+  </EXPR_Variable>
+  <EXPR_Operation>
+    <ID>F</ID>
+    <VarRef>2</VarRef>
+    <Operator>*</Operator>
+    <VarRef>x</VarRef>
+  </EXPR_Operation>
+  <EXPR_Operation>
+    <ID>F'</ID>
+    <Operator>Differentiate</Operator>
+    <FuncRef>F</FuncRef>
+    <VarRef>x</VarRef>
+  </EXPR_Operation>
+</EXPR>

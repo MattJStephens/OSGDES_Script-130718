@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!--mjs-->
+
+<Event>
+  <Name>SubCreateWave</Name>
+  <Type>CreateWave</Type>
+  <Inception>Spontaneous</Inception>
+  <Recurrance>Singular</Recurrance>
+  <Variable>
+    <Identifier>FileName</Identifier>
+    <Value>wave-sweep.wav</Value>
+  </Variable>
+  <Variable>
+    <Identifier>Channels</Identifier>
+    <Value>1</Value>
+  </Variable>
+  <Variable>
+    <Identifier>SampleRate</Identifier>
+    <Value>44100</Value>
+  </Variable>
+  <Variable>
+    <Identifier>BitsPerSample</Identifier>
+    <Value>16</Value>
+  </Variable>
+  <Variable>
+    <Identifier>NumSamples</Identifier>
+    <Value>16348</Value>
+  </Variable>
+  <Variable>
+    <Identifier>Type</Identifier>
+    <Value>SineSweep</Value>
+  </Variable>
+  <Variable>
+    <Identifier>Frequency</Identifier>
+    <Value>440</Value>
+  </Variable>
+  <Variable>
+    <Identifier>StartFrequency</Identifier>
+    <Value>0</Value>
+  </Variable>
+  <Variable>
+    <Identifier>EndFrequency</Identifier>
+    <Value>440</Value>
+  </Variable>
+  <Variable>
+    <Identifier>Dynamics</Identifier>
+    <Value>Stephens</Value>
+  </Variable>
+  <Variable>
+    <Identifier>ParamC</Identifier>
+    <Value>0.5</Value>
+  </Variable>
+</Event>

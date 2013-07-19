@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+
+
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    FilePath2 - the port -->
+  <Node>
+    <Name>FilePath2</Name>
+    <File>Port_facility_120516a.3DS</File>  
+  </Node>
+  <PositionAttitudeTransform>
+    <Name>FilePath2PAT</Name>
+    <Ref>
+      <RefName>FilePath2</RefName>
+      <EntityType>Node</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Position>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </Position>
+  </PositionAttitudeTransform>
+
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢ FilePath3 - the Ship-->
+  <Node>
+    <Name>FilePath3</Name>
+    <File>ship.3DS</File>
+  </Node>
+  <PositionAttitudeTransform>
+    <Name>FilePath3PAT</Name>
+    <Ref>
+      <RefName>FilePath3</RefName>
+      <EntityType>Node</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Position>
+      <x>1000</x>
+      <y>11811</y>
+      <z>0</z>
+    </Position>
+  </PositionAttitudeTransform>
+
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    Cone1-->
+  <Geode>
+    <Name>Cone1</Name>
+    <Cone>
+      <Center>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </Center>
+      <Height>10000</Height>
+      <Radius>1000</Radius>
+    </Cone>
+    <Ref>
+      <RefName>Cream</RefName>
+      <EntityType>Material</EntityType>
+      <RefType>SetAttribute</RefType>
+    </Ref>
+  </Geode>
+  <PositionAttitudeTransform>
+    <Name>Cone1PAT</Name>
+    <Ref>
+      <RefName>Cone1</RefName>
+      <EntityType>Geode</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Position>
+      <x>2461</x>
+      <y>0</y>
+      <z>236</z>
+    </Position>
+  </PositionAttitudeTransform>
+
+  <!--☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢☢    Cone2-->
+  <Geode>
+    <Name>Cone2</Name>
+    <Cone>
+      <Center>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </Center>
+      <Height>10000</Height>
+      <Radius>1000</Radius>
+    </Cone>
+    <Ref>
+      <RefName>Cream</RefName>
+      <EntityType>Material</EntityType>
+      <RefType>SetAttribute</RefType>
+    </Ref>
+  </Geode>
+  <PositionAttitudeTransform>
+    <Name>Cone2PAT</Name>
+    <Ref>
+      <RefName>Cone1</RefName>
+      <EntityType>Geode</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+    <Position>
+      <x>2117</x>
+      <y>1303</y>
+      <z>236</z>
+    </Position>
+  </PositionAttitudeTransform>
+  
+  
+  
+
+  <!--✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵   Geode containing text-->
+  <Geode>
+    <Name>HUD_Geode</Name>
+    <Ref>
+      <RefName>T1</RefName>
+      <EntityType>Text</EntityType>
+      <RefType>AddDrawable</RefType>
+    </Ref>
+    <Ref>
+      <RefName>T2</RefName>
+      <EntityType>Text</EntityType>
+      <RefType>AddDrawable</RefType>
+    </Ref>
+  </Geode>
+  <!--☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸☸    Text-->
+  <Text>
+    <Name>T1</Name>
+    <CharacterSize>25</CharacterSize>
+    <Font>impact.ttf</Font>
+    <InitText>Port</InitText>
+    <AxisAlignment>SCREEN</AxisAlignment>
+    <Position>
+      <x>10</x>
+      <y>10</y>
+      <z>-1.5</z>
+    </Position>
+    <Color>
+      <x>199</x>
+      <y>77</y>
+      <z>200</z>
+      <w>1</w>
+    </Color>
+  </Text> 
+  <!--☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠☠    Text ProjectionMatrix-->
+  <Projection>
+    <Name>HUDProjectionMatrix</Name>
+    <Ortho2D>
+      <Left>0</Left>
+      <Right>1024</Right>
+      <Bottom>0</Bottom>
+      <Top>768</Top>
+    </Ortho2D>
+    <Ref>
+      <RefName>HUDModelViewMatrix</RefName>
+      <EntityType>MatrixTransform</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+  </Projection>
+  <!--✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦  Text ViewMatrix Transfom -->
+  <MatrixTransform>
+    <Name>HUDModelViewMatrix</Name>
+    <Identity></Identity>
+    <ReferenceFrame>ABSOLUTE_RF</ReferenceFrame>
+    <Ref>
+      <RefName>HUD_Geode</RefName>
+      <EntityType>Geode</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+  </MatrixTransform>  
+</Environment>

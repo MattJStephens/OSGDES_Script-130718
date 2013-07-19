@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!--mjs OpenSceneGraph Extensible Markup Language Process Description Script (OSG XML PDS)-->
+<Event>
+  <Name>Sequencer1</Name>
+  <Type>Sequencer</Type>
+  <Subordination>Simultaneous</Subordination>
+
+ 
+  <Event>
+    <Name>LoadScript</Name>
+    <Type>LoadScript</Type>
+    <Inception>MemMap_Conditional</Inception>
+    <Variable>
+      <Identifier>mem_map_str</Identifier>
+      <Value>MJSRTF_Server</Value>
+      <DataType>String</DataType>
+    </Variable>
+    <Variable>
+      <Identifier>file_name</Identifier>
+      <Value>Environment_LightX.xml</Value>
+      <DataType>String</DataType>
+    </Variable>
+    <Variable>
+      <Identifier>mem_map_address</Identifier>
+      <Value>0</Value>
+      <DataType>integer</DataType>
+    </Variable>
+    
+    <!--if the mem tested is equal to a then the event is triggered--> 
+    <Variable>
+      <Identifier>mem_test</Identifier>
+      <Value>a</Value>
+      <DataType>char</DataType>
+    </Variable>
+    <!--<Recurrance>Singular</Recurrance>-->
+  </Event>
+  
+  <Event>
+    <Name>SaveEnvironmentTree</Name>
+    <Type>SaveEnvironmentTree</Type>
+    <FileName>Environment_RemoteServer1X.xml</FileName>
+    <Recurrance>Singular</Recurrance>
+  </Event>
+
+  <Event>
+    <Name>SaveEventTree</Name>
+    <Type>SaveEventTree</Type>
+    <FileName>Event_RemoteServer1X.xml</FileName>
+    <Recurrance>Singular</Recurrance>
+  </Event>
+</Event>

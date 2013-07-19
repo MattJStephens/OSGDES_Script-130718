@@ -1,0 +1,32 @@
+<?xml version="1.0"?><!--mjs OpenSceneGraph Extensible Markup Language Process Description Script (OSG XML PDS)--><Event>
+	<Name>Sequencer1</Name>
+	<Type>EventType_Sequencer</Type>
+	<Event>
+	<Name>SaveEventTree</Name>
+	<Type>EventType_SaveEventTree</Type>
+	<FileName>EventTree1.xml</FileName>
+
+    <Recurrance>Singular</Recurrance>
+  
+  </Event>
+	<Event>
+	<Name>AlterText1</Name>
+	<Type>EventType_AlterText</Type></Event>
+	<Event>
+	<Name>AlterText2</Name>
+	<Type>EventType_AlterText</Type></Event>
+	<Event>
+	<Name>DE_Logistics1</Name>
+	<Type>DE_Logistics</Type></Event>
+	<Event>
+	<Name>DE_Logistics2</Name>
+	<Type>DE_Logistics</Type></Event>
+	<Event>
+	<Name>UpdateTheatreOfOperations</Name>
+	<Type>EventType_TheatreOfOperations</Type></Event>
+	<Event>
+	<Name>UpdateGraph1</Name>
+	<Type>EventType_UpdateGraph</Type></Event>
+	<Event>
+	<Name>UpdateVariable</Name>
+	<Type>EventType_UpdateVariable</Type></Event></Event>

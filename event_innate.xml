@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--mjs OpenSceneGraph Extensible Markup Language Process Description Script (OSG XML PDS)-->
+<Event>
+  <Name>Sequencer1</Name>
+  <Type>Sequencer</Type>
+  <Subordination>Simultaneous</Subordination> 
+  <Event>
+    <Name>UpdateVariable</Name>
+    <Type>UpdateVariable</Type>
+    <Variable>
+      <Identifier>type</Identifier>
+      <Value>mm</Value>
+    </Variable>
+  </Event>
+</Event>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!--mjs-->
+<Script>
+  <EnvironmentFileName>Environment_UDPClientSocket001.xml</EnvironmentFileName>
+  <EventFileName>Event_UDPClientSocket001.xml</EventFileName>
+</Script>

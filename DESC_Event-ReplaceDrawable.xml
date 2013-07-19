@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<Event>
+  <Name>ReplaceDrawable</Name>
+  <Type>ReplaceDrawable</Type>
+  <Variable>
+    <Identifier>Logistics_producer</Identifier>
+    <Value>Logistics_producer1</Value>
+    <DataType>String</DataType>
+  </Variable>
+  <Variable>
+    <Identifier>Geode</Identifier>
+    <Value>Cone1</Value>
+    <DataType>String</DataType>
+  </Variable>
+</Event>

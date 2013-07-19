@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- Created with XMLFox -->
+
+<Event>
+  <Name>UpdateVelocity2</Name>
+  <Type>UpdateVelocity</Type>
+  <TimeType>Real</TimeType>
+  <Position>
+    <x>0</x>
+    <y>0</y>
+    <z>0</z>
+  </Position>
+  <Velocity>
+    <x>0</x>
+    <y>0</y>
+    <z>0</z>
+  </Velocity>
+  <OrientationAxis>
+    <x>0</x>
+    <y>1</y>
+    <z>0</z>
+  </OrientationAxis>
+  <AngularVelocity>100</AngularVelocity>
+  <RefName>FilePath1PAT</RefName>
+</Event>

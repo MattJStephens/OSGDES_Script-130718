@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<!-- mjs OpenSceneGraph Extensible Markup Language Environment Description Script (OSG XML EDS)-->
+<!--✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈✈-->
+<Environment>
+
+  <!--☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤☤ Line-->
+  <Vec3Array>
+    <Name>Vec3Array_Bay</Name>
+    <Vec3d>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </Vec3d>
+    <Vec3d>
+      <x>0</x>
+      <y>0</y>
+      <z>100000</z>
+    </Vec3d>
+    <Vec3d>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </Vec3d>
+    <Vec3d>
+        <x>0</x>
+        <y>100000</y>
+        <z>0</z>
+    </Vec3d>
+    <Vec3d>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </Vec3d>
+    <Vec3d>
+      <x>100000</x>
+      <y>0</y>
+      <z>0</z>
+    </Vec3d>
+  </Vec3Array>
+  
+  <DrawArrays>
+    <Name>DrawArrays_Bay</Name>
+    <PrimitiveSet>LINE_STRIP</PrimitiveSet>
+    <SetFirst>0</SetFirst>
+    <SetCount>6</SetCount>
+  </DrawArrays>
+  
+  <Geometry>
+    <Name>Geometry_Bay</Name>
+    <Ref>
+      <RefName>DrawArrays_Bay</RefName>
+      <EntityType>DrawArrays</EntityType>
+      <RefType>AddPrimitiveSet</RefType>
+    </Ref>    
+    <Ref>
+      <RefName>Vec3Array_Bay</RefName>
+      <EntityType>Vec3Array</EntityType>
+      <RefType>SetVertexArray</RefType>
+    </Ref>   
+  </Geometry>
+  
+  <Geode>
+    <Name>GeodeLine_Bay</Name>   
+    <Ref>
+      <RefName>Geometry_Bay</RefName>
+      <EntityType>Geometry</EntityType>
+      <RefType>AddDrawable</RefType>
+    </Ref>
+    <Ref>
+      <RefName>WhiteEmissive</RefName>
+      <EntityType>Material</EntityType>
+      <RefType>SetAttribute</RefType>
+    </Ref>
+  </Geode>
+  
+  <PositionAttitudeTransform>
+    <Name>PAT_AxisBay</Name>
+    <Position>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </Position>
+    <Ref>
+      <RefName>GeodeLine_Bay</RefName>
+      <EntityType>Geode</EntityType>
+      <RefType>AddChild</RefType>
+    </Ref>
+  </PositionAttitudeTransform>
+ 
+  
+</Environment>

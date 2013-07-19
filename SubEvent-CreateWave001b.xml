@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!--mjs-->
+
+<Event>
+  <Name>SubCreateWave</Name>
+  <Type>CreateWave</Type>
+  <Inception>Spontaneous</Inception>
+  <Recurrance>Singular</Recurrance>
+  <Variable>
+    <Identifier>FileName</Identifier>
+    <Value>wave-random001.wav</Value>
+  </Variable>
+  <Variable>
+    <Identifier>Channels</Identifier>
+    <Value>1</Value>
+  </Variable>
+  <Variable>
+    <Identifier>SampleRate</Identifier>   
+    <Value>44100</Value>
+  </Variable>
+  <Variable>
+    <Identifier>BitsPerSample</Identifier>
+    <Value>16</Value>
+  </Variable>
+  <Variable>
+    <Identifier>NumSamples</Identifier>
+    <Value>44100</Value>
+  </Variable>
+  <Variable>
+    <Identifier>Type</Identifier>
+    <Value>SineSweep</Value>
+  </Variable>
+  <Variable>
+    <Identifier>Frequency</Identifier>
+    <Value>440</Value>
+  </Variable>
+  <Variable>
+    <Identifier>StartFrequency</Identifier>
+    <Value>10</Value>
+  </Variable>
+  <Variable>
+    <Identifier>EndFrequency</Identifier>
+    <Value>2000</Value>
+  </Variable>
+  <Variable>
+    <Identifier>Dynamics</Identifier>
+    <Value>AttackVibeDecay</Value>
+  </Variable>
+  <Variable>
+    <Identifier>SustainVibeFrequency</Identifier>
+    <Value>12.0</Value>
+  </Variable>
+  <Variable>
+    <Identifier>Attack</Identifier>
+    <Value>0.3</Value>
+  </Variable>
+  <Variable>
+    <Identifier>Sustain</Identifier>
+    <Value>0.7</Value>
+  </Variable>
+  <Variable>
+    <Identifier>Decay</Identifier>
+    <Value>1.0</Value>
+  </Variable>
+</Event>
+ 

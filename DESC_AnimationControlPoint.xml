@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- Created with XMLFox -->
+<AnimationControlPoint>
+  <Name>$AnimationControlPoint</Name>
+  <Point>
+    <x>0</x>
+    <y>0</y>
+    <z>0</z>
+  </Point>
+  <Time>1</Time>
+</AnimationControlPoint>

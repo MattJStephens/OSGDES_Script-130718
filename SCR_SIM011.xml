@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<Script>
+  <EnvironmentFileName>ENV_FilePaths.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_GRPS003.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_LGHT001.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_VIEW001.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_MTRL001.xml</EnvironmentFileName> 
+  <EnvironmentFileName>ENV_NODE005.xml</EnvironmentFileName>  
+  <EnvironmentFileName>ENV_LGST011.xml</EnvironmentFileName>  
+  <EnvironmentFileName>ENV_LINE002B.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_LINE005.xml</EnvironmentFileName>
+  <EnvironmentFileName>ENV_TEXT002.xml</EnvironmentFileName>  
+  <EventFileName>EVNT_SIM011.xml</EventFileName>  
+</Script>

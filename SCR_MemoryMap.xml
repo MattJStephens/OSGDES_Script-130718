@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<Script>
+  <EnvironmentFileName>Environment_MemoryMap.xml</EnvironmentFileName>
+  <EventFileName>Event_MemoryMap.xml</EventFileName>
+</Script>

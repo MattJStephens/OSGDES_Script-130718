@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--mjs-->
+<Event>
+  <Name>$Sequencer</Name>
+  <Type>Sequencer</Type>
+  <Subordination>Sequential</Subordination>
+  <Event>
+    <Name>$Name</Name>
+    <Type>AlterPosition</Type>
+    <RefName>PositionAttitudeTransform0</RefName>
+    <Inception>Conditional</Inception>
+    <InceptionConditionEXPR>
+      <ID>Inception</ID>
+      <EXPR_Variable>
+        <ID>x</ID>
+        <Type>time</Type>
+        <!--<Value>9</Value>-->
+      </EXPR_Variable>    
+      <EXPR_Operation>
+        <ID>F</ID>
+        <Operator>></Operator>
+        <Operand>
+          <Type>Variable</Type>
+          <VarRef>x</VarRef>
+        </Operand>
+        <Operand>
+          <Type>Constant</Type>
+          <Constant>8</Constant>
+        </Operand>
+      </EXPR_Operation>
+    </InceptionConditionEXPR>
+    <Recurrance>Singular</Recurrance>
+    <Position>
+      <x>0</x>
+      <y>0</y>
+      <z>3</z>
+    </Position>    
+  </Event>
+</Event>
